@@ -492,7 +492,7 @@
         "type": "tcp request",
         "z": "947c53d08c93935d",
         "name": "",
-        "server": "192.168.100.245",
+        "server": "127.0.0.1",
         "port": "80",
         "out": "time",
         "ret": "buffer",
@@ -500,7 +500,7 @@
         "newline": "",
         "trim": false,
         "tls": "",
-        "x": 810,
+        "x": 780,
         "y": 660,
         "wires": [
             [
