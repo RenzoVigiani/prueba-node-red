@@ -866,52 +866,6 @@
         ]
     },
     {
-        "id": "11672b69cac4f077",
-        "type": "ui_media",
-        "z": "947c53d08c93935d",
-        "group": "a4c87799322f977e",
-        "name": "convergente",
-        "width": "16",
-        "height": "7",
-        "order": 1,
-        "category": "foto",
-        "file": "WhatsApp Image 2023-04-24 at 16.06.22.jpeg",
-        "layout": "adjust",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 210,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "40e09d768975e84f",
-        "type": "ui_media",
-        "z": "947c53d08c93935d",
-        "group": "448272e145e46a81",
-        "name": "divergente",
-        "width": 16,
-        "height": "7",
-        "order": 1,
-        "category": "diver",
-        "file": "WhatsApp Image 2023-04-24 at 16.06.16.jpeg",
-        "layout": "adjust",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 450,
-        "y": 900,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a0703f5a013f4fac",
         "type": "inject",
         "z": "947c53d08c93935d",
