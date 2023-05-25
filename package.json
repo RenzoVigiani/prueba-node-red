@@ -1,0 +1,12 @@
+{
+    "name": "prueba-node-red",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {},
+    "node-red": {
+        "settings": {
+            "flowFile": "Lab-rem-Fisica.json",
+            "credentialsFile": "Lab-rem-Fisica_cred.json"
+        }
+    }
+}
