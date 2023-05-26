@@ -140,7 +140,7 @@
         "tab": "ce0f2688aa38dc08",
         "order": 7,
         "disp": true,
-        "width": "6",
+        "width": 13,
         "collapse": false
     },
     {
@@ -149,8 +149,8 @@
         "name": "Convergente",
         "tab": "ce0f2688aa38dc08",
         "order": 4,
-        "disp": true,
-        "width": 17,
+        "disp": false,
+        "width": "17",
         "collapse": false
     },
     {
@@ -159,8 +159,8 @@
         "name": "Divergente",
         "tab": "ce0f2688aa38dc08",
         "order": 3,
-        "disp": true,
-        "width": 17,
+        "disp": false,
+        "width": "17",
         "collapse": false
     },
     {
@@ -197,8 +197,8 @@
         "name": "Camara",
         "tab": "ce0f2688aa38dc08",
         "order": 2,
-        "disp": true,
-        "width": 17,
+        "disp": false,
+        "width": "17",
         "collapse": false
     },
     {
@@ -292,13 +292,63 @@
         "height": 1
     },
     {
-        "id": "9c02db064b29b9b7",
+        "id": "342c961d04d273ee",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
-        "group": "6ca12bd8aeff9f61",
-        "order": 2,
-        "width": 13,
+        "group": "1da480d9eb9773f1",
+        "order": 4,
+        "width": 9,
+        "height": 1
+    },
+    {
+        "id": "1fe28c9aaffc02e3",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 4,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "f1f588ca212a0094",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 6,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "df9e98f24b79bfaf",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 7,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "94a3fd6b61bf5e51",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 8,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "392dbbd73be96956",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 9,
+        "width": 7,
         "height": 1
     },
     {
@@ -350,8 +400,8 @@
         "type": "ui_button",
         "z": "947c53d08c93935d",
         "name": "",
-        "group": "a8693af1ed732ccd",
-        "order": 2,
+        "group": "c83e16537c45f368",
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -543,8 +593,8 @@
         "type": "ui_button",
         "z": "947c53d08c93935d",
         "name": "",
-        "group": "a8693af1ed732ccd",
-        "order": 1,
+        "group": "c83e16537c45f368",
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -629,7 +679,7 @@
         "z": "947c53d08c93935d",
         "group": "c83e16537c45f368",
         "name": "Recibe",
-        "order": 2,
+        "order": 5,
         "width": 6,
         "height": 4,
         "format": "<ul>\n<h1> Recibe: </h1>\n        <li>{{msg.payload}}</li>\n      \n</ul>",
@@ -985,9 +1035,9 @@
         "z": "947c53d08c93935d",
         "group": "6ca12bd8aeff9f61",
         "name": "",
-        "order": 3,
+        "order": 1,
         "width": 17,
-        "height": 16,
+        "height": 13,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n        box-shadow: 0 5px 25px #2EE06E\n    }\n</style>\n\n<img alt=\"\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1004,8 +1054,8 @@
         "type": "ui_button",
         "z": "947c53d08c93935d",
         "name": "",
-        "group": "6ca12bd8aeff9f61",
-        "order": 1,
+        "group": "1da480d9eb9773f1",
+        "order": 3,
         "width": 4,
         "height": 1,
         "passthru": true,
