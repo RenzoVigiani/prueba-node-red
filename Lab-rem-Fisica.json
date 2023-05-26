@@ -1084,8 +1084,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 300,
+        "x": 550,
+        "y": 340,
         "wires": [
             [
                 "c860518de3fa4831",
@@ -1607,8 +1607,8 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "true",
+        "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
         "x": 310,
