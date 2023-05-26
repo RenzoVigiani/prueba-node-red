@@ -91,7 +91,7 @@
                 "accents": "blue",
                 "warn": "red",
                 "background": "grey",
-                "palette": "light"
+                "palette": "dark"
             }
         },
         "site": {
@@ -127,7 +127,7 @@
         "id": "a8693af1ed732ccd",
         "type": "ui_group",
         "name": "Funciones",
-        "tab": "",
+        "tab": "d63cc88c7a46605e",
         "order": 8,
         "disp": false,
         "width": "6",
@@ -157,7 +157,7 @@
         "id": "448272e145e46a81",
         "type": "ui_group",
         "name": "Divergente",
-        "tab": "",
+        "tab": "d63cc88c7a46605e",
         "order": 3,
         "disp": false,
         "width": "17",
