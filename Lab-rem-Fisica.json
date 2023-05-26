@@ -257,7 +257,7 @@
         "tab": "78b32a0c459040a2",
         "order": 4,
         "disp": true,
-        "width": "6",
+        "width": 14,
         "collapse": false
     },
     {
@@ -279,6 +279,16 @@
         "disp": true,
         "width": 8,
         "collapse": false
+    },
+    {
+        "id": "bb091bcfd2c44353",
+        "type": "ui_spacer",
+        "z": "13bee6e068011382",
+        "name": "spacer",
+        "group": "d129e0a0dad3a8d1",
+        "order": 3,
+        "width": 8,
+        "height": 1
     },
     {
         "id": "059369056ca71f6f",
@@ -1443,7 +1453,7 @@
         "z": "13bee6e068011382",
         "group": "d129e0a0dad3a8d1",
         "name": "",
-        "order": 3,
+        "order": 4,
         "width": 14,
         "height": 7,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
