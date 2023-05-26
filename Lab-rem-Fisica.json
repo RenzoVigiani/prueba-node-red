@@ -1364,7 +1364,7 @@
         "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.12:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.12:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
+        "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 1150,
