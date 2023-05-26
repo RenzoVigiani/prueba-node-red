@@ -1,12 +1,4 @@
 {
-<<<<<<< HEAD
-    "name": "prueba-node-red",
-=======
-    "name": "Prueba-123",
->>>>>>> 214ee3679ef7b7e980354bed58179bade25f86ba
-    "description": "A Node-RED Project",
-    "version": "0.0.1",
-    "dependencies": {},
     "node-red": {
         "settings": {
             "flowFile": "Lab-rem-Fisica.json",
