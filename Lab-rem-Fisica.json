@@ -367,7 +367,7 @@
         "type": "function",
         "z": "947c53d08c93935d",
         "name": "function 9",
-        "func": "let diafragma = flow.get(\"diafragma\");\nlet dist_FL1 =flow.get(\"dist_FL1\");\nlet dist_L2P = flow.get(\"dist_L2P\");\nlet dist_L1L2 = flow.get(\"dist_L1L2\");\nmsg.payload = \"POST /HTTP/1.1 { \\\"Estado\\\": [3,true,true],\\\"Analogico\\\": [\" + diafragma + \",\" + dist_FL1 + \",\" + dist_L2P + \"]} \"\nreturn msg;",
+        "func": "let diafragma = flow.get(\"diafragma\");\nlet dist_FL1 =flow.get(\"dist_FL1\");\nlet dist_L2P = flow.get(\"dist_L2P\");\nlet dist_L1L2 = flow.get(\"dist_L1L2\");\nmsg.payload = \"POST /HTTP/1.1 { \\\"Estado\\\": [3,true,true],\\\"Analogico\\\": [\" + diafragma + \",\" + dist_FL1 + \",\" + dist_L2P +\",\"+dist_L1L2+ \"]} \"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
