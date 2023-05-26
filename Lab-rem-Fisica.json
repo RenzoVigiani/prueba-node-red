@@ -1486,7 +1486,7 @@
         "tooltip": "Angulo Elevation",
         "group": "d828ae6182d713dd",
         "order": 5,
-        "width": 6,
+        "width": "4",
         "height": 2,
         "passthru": true,
         "outs": "all",
