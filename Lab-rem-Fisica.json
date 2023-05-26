@@ -271,16 +271,6 @@
         "collapse": false
     },
     {
-        "id": "42e3dc25bebff629",
-        "type": "ui_group",
-        "name": "Camara",
-        "tab": "78b32a0c459040a2",
-        "order": 6,
-        "disp": true,
-        "width": 14,
-        "collapse": false
-    },
-    {
         "id": "544bd628b7ddfc1a",
         "type": "ui_group",
         "name": "Panel de control",
@@ -288,16 +278,6 @@
         "order": 2,
         "disp": true,
         "width": 8,
-        "collapse": false
-    },
-    {
-        "id": "9270f4696ce95e3a",
-        "type": "ui_group",
-        "name": "Esquema",
-        "tab": "78b32a0c459040a2",
-        "order": 5,
-        "disp": true,
-        "width": "6",
         "collapse": false
     },
     {
@@ -1461,11 +1441,11 @@
         "id": "b4dc737793a6eabb",
         "type": "ui_template",
         "z": "13bee6e068011382",
-        "group": "42e3dc25bebff629",
+        "group": "d129e0a0dad3a8d1",
         "name": "",
-        "order": 0,
-        "width": "14",
-        "height": "14",
+        "order": 3,
+        "width": 14,
+        "height": 7,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1482,10 +1462,10 @@
         "type": "ui_button",
         "z": "13bee6e068011382",
         "name": "",
-        "group": "42e3dc25bebff629",
-        "order": 1,
-        "width": 14,
-        "height": 6,
+        "group": "d129e0a0dad3a8d1",
+        "order": 2,
+        "width": 3,
+        "height": 1,
         "passthru": true,
         "label": "Cámara",
         "tooltip": "",
@@ -1601,6 +1581,33 @@
         "wires": [
             [
                 "e0ab9e9c72bdd633"
+            ]
+        ]
+    },
+    {
+        "id": "bc931e66b6aec0fc",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "d129e0a0dad3a8d1",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "passthru": true,
+        "label": "Esquema",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 640,
+        "wires": [
+            [
+                "1b992246c7554d67"
             ]
         ]
     }
