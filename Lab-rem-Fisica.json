@@ -1469,11 +1469,11 @@
         "min": 0,
         "max": "180",
         "step": 1,
-        "x": 210,
+        "x": 130,
         "y": 40,
         "wires": [
             [
-                "4bb92b037d1a0ca7"
+                "24cf9e5f073b85a5"
             ]
         ]
     },
@@ -1495,7 +1495,7 @@
         "min": 0,
         "max": "90",
         "step": 1,
-        "x": 220,
+        "x": 120,
         "y": 100,
         "wires": [
             [
@@ -1730,6 +1730,30 @@
         "wires": [
             [
                 "314f45cdfdf206f9"
+            ]
+        ]
+    },
+    {
+        "id": "24cf9e5f073b85a5",
+        "type": "ui_text_input",
+        "z": "13bee6e068011382",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "1da480d9eb9773f1",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 290,
+        "y": 40,
+        "wires": [
+            [
+                "4bb92b037d1a0ca7"
             ]
         ]
     }
