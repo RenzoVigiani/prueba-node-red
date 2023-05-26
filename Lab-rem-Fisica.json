@@ -1037,11 +1037,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "0",
-                "vt": "num"
             }
         ],
         "repeat": "",
@@ -1049,9 +1044,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 670,
+        "payload": "0",
+        "payloadType": "num",
+        "x": 650,
         "y": 220,
         "wires": [
             [
@@ -1067,11 +1062,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "120",
-                "vt": "num"
             }
         ],
         "repeat": "",
@@ -1079,9 +1069,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 670,
+        "payload": "120",
+        "payloadType": "num",
+        "x": 650,
         "y": 300,
         "wires": [
             [
@@ -1098,11 +1088,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "70",
-                "vt": "num"
             }
         ],
         "repeat": "",
@@ -1110,9 +1095,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 690,
+        "payload": "70",
+        "payloadType": "num",
+        "x": 670,
         "y": 420,
         "wires": [
             [
@@ -1128,11 +1113,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "70",
-                "vt": "num"
             }
         ],
         "repeat": "",
@@ -1140,9 +1120,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 70,
+        "payload": "70",
+        "payloadType": "num",
+        "x": 50,
         "y": 440,
         "wires": [
             [
@@ -1158,11 +1138,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "20",
-                "vt": "num"
             }
         ],
         "repeat": "",
@@ -1170,9 +1145,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 70,
+        "payload": "20",
+        "payloadType": "num",
+        "x": 50,
         "y": 340,
         "wires": [
             [
@@ -1188,11 +1163,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "v": "0",
-                "vt": "num"
             }
         ],
         "repeat": "",
@@ -1200,9 +1170,9 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 70,
+        "payload": "0",
+        "payloadType": "num",
+        "x": 50,
         "y": 240,
         "wires": [
             [
