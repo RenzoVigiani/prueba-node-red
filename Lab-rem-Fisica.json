@@ -247,7 +247,7 @@
         "tab": "78b32a0c459040a2",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": "27",
         "collapse": false
     },
     {
@@ -1553,5 +1553,21 @@
                 "1b992246c7554d67"
             ]
         ]
+    },
+    {
+        "id": "e1459473caf4d83d",
+        "type": "ui_text",
+        "z": "13bee6e068011382",
+        "group": "6e1ba2a8a3b06598",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Enlace Wifi 2.4 GHz",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 620,
+        "y": 240,
+        "wires": []
     }
 ]
