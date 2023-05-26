@@ -1090,7 +1090,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "check",
+        "icon": "foward",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
