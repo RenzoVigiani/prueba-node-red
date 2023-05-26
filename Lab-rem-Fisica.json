@@ -1453,8 +1453,8 @@
         "label": "Enlace Wifi 2.4 GHz",
         "format": "{{msg.payload}}",
         "layout": "col-center",
-        "x": 580,
-        "y": 20,
+        "x": 1380,
+        "y": 60,
         "wires": []
     },
     {
@@ -1634,6 +1634,39 @@
         "y": 240,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "3e182fbf34bd652c",
+        "type": "ui_switch",
+        "z": "13bee6e068011382",
+        "name": "",
+        "label": "Tipo",
+        "tooltip": "",
+        "group": "1da480d9eb9773f1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 1170,
+        "y": 60,
+        "wires": [
+            [
+                "e1459473caf4d83d"
+            ]
         ]
     }
 ]
