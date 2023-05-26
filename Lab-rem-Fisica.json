@@ -1733,29 +1733,6 @@
         ]
     },
     {
-        "id": "5b226f834f2a41ae",
-        "type": "ui_media",
-        "z": "13bee6e068011382",
-        "group": "f5dc0d469bcfeca8",
-        "name": "",
-        "width": 0,
-        "height": 0,
-        "order": 1,
-        "category": "Esquema",
-        "file": "wifi2-4GHz.png",
-        "layout": "adjust",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 690,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8f0c97ce9cfed99a",
         "type": "function",
         "z": "13bee6e068011382",
@@ -1768,6 +1745,28 @@
         "libs": [],
         "x": 430,
         "y": 900,
+        "wires": [
+            [
+                "b9b6f5853e754e88"
+            ]
+        ]
+    },
+    {
+        "id": "b9b6f5853e754e88",
+        "type": "ui_template",
+        "z": "13bee6e068011382",
+        "group": "f5dc0d469bcfeca8",
+        "name": "",
+        "order": 1,
+        "width": 14,
+        "height": 11,
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 660,
+        "y": 960,
         "wires": [
             []
         ]
