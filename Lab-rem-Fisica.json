@@ -247,7 +247,7 @@
         "tab": "78b32a0c459040a2",
         "order": 1,
         "disp": true,
-        "width": 24,
+        "width": 9,
         "collapse": false
     },
     {
@@ -257,7 +257,7 @@
         "tab": "78b32a0c459040a2",
         "order": 2,
         "disp": true,
-        "width": 6,
+        "width": 18,
         "collapse": false
     },
     {
@@ -301,23 +301,13 @@
         "collapse": false
     },
     {
-        "id": "2bcbfd2451703e10",
+        "id": "7346a045c0ec72f0",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
-        "group": "6e1ba2a8a3b06598",
+        "group": "d129e0a0dad3a8d1",
         "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c5c32a27c25ed099",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "6e1ba2a8a3b06598",
-        "order": 5,
-        "width": 1,
+        "width": 12,
         "height": 1
     },
     {
@@ -1644,7 +1634,7 @@
         "z": "13bee6e068011382",
         "group": "6e1ba2a8a3b06598",
         "order": 2,
-        "width": 9,
+        "width": 3,
         "height": 1,
         "name": "",
         "label": "Enlace Wifi 2.4 GHz",
@@ -1659,8 +1649,8 @@
         "type": "ui_text",
         "z": "13bee6e068011382",
         "group": "6e1ba2a8a3b06598",
-        "order": 4,
-        "width": 10,
+        "order": 3,
+        "width": 3,
         "height": 1,
         "name": "",
         "label": "Enlace Radio por soft",
