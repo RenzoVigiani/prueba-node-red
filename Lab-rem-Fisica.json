@@ -1078,14 +1078,14 @@
         "type": "function",
         "z": "13bee6e068011382",
         "name": "function 20",
-        "func": "let diafragma = flow.get(\"diafragma\");\nlet dist_FL1 =flow.get(\"dist_FL1\");\nlet dist_L2P = flow.get(\"dist_L2P\");\nlet dist_L1L2 = flow.get(\"dist_L1L2\");\nmsg.payload = \"POST /HTTP/1.1 { \\\"Estado\\\": [3,true,true],\\\"Analogico\\\": [\" + diafragma + \",\" + dist_FL1 + \",\" + dist_L2P + \"]} \"\nreturn msg;",
+        "func": "// @ts-nocheck\nlet azimut = flow.get(\"azimut\");\nlet elevation =flow.get(\"elevation\");\nlet iniciar = flow.get(\"iniciar\");\nmsg.payload = \"POST /HTTP/1.1 { \\\"Estado\\\": [2,true,\" + iniciar + \"],\\\"Analogico\\\": [\" + azimut + \",\" + elevation+\"]}\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 540,
-        "y": 340,
+        "x": 570,
+        "y": 300,
         "wires": [
             [
                 "c860518de3fa4831",
@@ -1107,7 +1107,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 800,
-        "y": 340,
+        "y": 300,
         "wires": []
     },
     {
@@ -1588,6 +1588,50 @@
         "tooltip": "",
         "x": 570,
         "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b43325c47a1d2cd7",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "544bd628b7ddfc1a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Iniciar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "314f45cdfdf206f9"
+            ]
+        ]
+    },
+    {
+        "id": "314f45cdfdf206f9",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "variable_iniciar",
+        "func": "flow.set(\"iniciar\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 240,
         "wires": [
             []
         ]
