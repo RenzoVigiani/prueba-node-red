@@ -1748,7 +1748,7 @@
         "label": "FINALIZAR",
         "tooltip": "",
         "color": "white",
-        "bgcolor": "red",
+        "bgcolor": "#990000",
         "icon": "close",
         "payload": "false",
         "payloadType": "bool",
