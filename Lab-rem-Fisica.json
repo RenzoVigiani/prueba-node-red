@@ -1547,7 +1547,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "television",
+        "icon": "image",
         "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Esquema\"],\"hide\":[\"Telecomunicaciones_Camara\"]}}",
         "payloadType": "json",
         "topic": "topic",
