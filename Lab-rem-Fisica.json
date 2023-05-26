@@ -1409,7 +1409,7 @@
         "type": "function",
         "z": "13bee6e068011382",
         "name": "abrir camara",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.88:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.12:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
