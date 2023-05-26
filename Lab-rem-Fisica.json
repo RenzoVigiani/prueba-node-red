@@ -1360,7 +1360,7 @@
         "type": "ui_ui_control",
         "z": "13bee6e068011382",
         "name": "",
-        "events": "all",
+        "events": "change",
         "x": 440,
         "y": 780,
         "wires": [
