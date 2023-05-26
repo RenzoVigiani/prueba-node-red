@@ -246,8 +246,8 @@
         "name": "Tipo de laboratorio",
         "tab": "78b32a0c459040a2",
         "order": 1,
-        "disp": true,
-        "width": 17,
+        "disp": false,
+        "width": "17",
         "collapse": false
     },
     {
@@ -301,12 +301,12 @@
         "collapse": false
     },
     {
-        "id": "11b37b70e929f7f2",
+        "id": "6180395476cd89e9",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
         "group": "6e1ba2a8a3b06598",
-        "order": 3,
+        "order": 2,
         "width": 4,
         "height": 1
     },
@@ -1537,7 +1537,7 @@
         "label": "",
         "tooltip": "",
         "group": "6e1ba2a8a3b06598",
-        "order": 2,
+        "order": 3,
         "width": 6,
         "height": 1,
         "passthru": true,
