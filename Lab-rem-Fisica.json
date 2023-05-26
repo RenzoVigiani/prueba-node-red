@@ -311,16 +311,6 @@
         "height": 1
     },
     {
-        "id": "39272c62311b72e6",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "d129e0a0dad3a8d1",
-        "order": 3,
-        "width": 8,
-        "height": 1
-    },
-    {
         "id": "059369056ca71f6f",
         "type": "ui_numeric",
         "z": "947c53d08c93935d",
@@ -1311,8 +1301,8 @@
         "z": "13bee6e068011382",
         "name": "",
         "events": "all",
-        "x": 840,
-        "y": 800,
+        "x": 440,
+        "y": 780,
         "wires": [
             []
         ]
@@ -1458,7 +1448,7 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\"],\"hide\":[\"Home_Divergente\",\"Home_Parametros-div\"]}}",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1538,8 +1528,8 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Esquema\"],\"hide\":[\"Telecomunicaciones_Camara\"]}}",
+        "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
         "x": 220,
@@ -1568,8 +1558,8 @@
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 540,
-        "y": 920,
+        "x": 440,
+        "y": 880,
         "wires": [
             []
         ]
