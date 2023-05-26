@@ -281,7 +281,7 @@
         "collapse": false
     },
     {
-        "id": "f4bf868b5f854181",
+        "id": "0d8be7b4175ef180",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -291,7 +291,7 @@
         "height": 1
     },
     {
-        "id": "d405bc7855a2aee7",
+        "id": "b6c0873cd63218bc",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -301,7 +301,7 @@
         "height": 1
     },
     {
-        "id": "4a6a7c802a584c91",
+        "id": "f6ba38c2fca76d85",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,12 +311,12 @@
         "height": 1
     },
     {
-        "id": "bdc9647ed2a8d1f1",
+        "id": "8917d1260eabe283",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
-        "group": "d828ae6182d713dd",
-        "order": 5,
+        "group": "d129e0a0dad3a8d1",
+        "order": 3,
         "width": 8,
         "height": 1
     },
@@ -1729,8 +1729,8 @@
         "name": "",
         "label": "Iniciar experiencia",
         "tooltip": "",
-        "group": "d129e0a0dad3a8d1",
-        "order": 3,
+        "group": "d828ae6182d713dd",
+        "order": 5,
         "width": 8,
         "height": 1,
         "passthru": true,
