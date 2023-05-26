@@ -1437,7 +1437,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 640,
+        "x": 620,
         "y": 700,
         "wires": [
             []
