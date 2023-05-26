@@ -243,9 +243,10 @@
     {
         "id": "6e1ba2a8a3b06598",
         "type": "ui_group",
+        "d": true,
         "name": "Tipo de laboratorio",
         "tab": "78b32a0c459040a2",
-        "order": 1,
+        "order": 2,
         "disp": false,
         "width": "17",
         "collapse": false
@@ -255,9 +256,9 @@
         "type": "ui_group",
         "name": "Visualización",
         "tab": "78b32a0c459040a2",
-        "order": 4,
-        "disp": true,
-        "width": 13,
+        "order": 1,
+        "disp": false,
+        "width": "13",
         "collapse": false
     },
     {
@@ -285,7 +286,7 @@
         "type": "ui_group",
         "name": "Esquema",
         "tab": "78b32a0c459040a2",
-        "order": 2,
+        "order": 3,
         "disp": false,
         "width": "17",
         "collapse": false
@@ -295,7 +296,7 @@
         "type": "ui_group",
         "name": "Camara",
         "tab": "78b32a0c459040a2",
-        "order": 3,
+        "order": 4,
         "disp": false,
         "width": "17",
         "collapse": false
