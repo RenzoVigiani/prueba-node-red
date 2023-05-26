@@ -1090,7 +1090,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "foward",
+        "icon": "mail-foward",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
