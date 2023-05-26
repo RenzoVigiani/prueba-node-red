@@ -955,7 +955,7 @@
         "type": "function",
         "z": "947c53d08c93935d",
         "name": "function 18",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.100.2:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.12:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
