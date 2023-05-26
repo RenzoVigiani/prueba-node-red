@@ -247,7 +247,7 @@
         "tab": "78b32a0c459040a2",
         "order": 1,
         "disp": true,
-        "width": 9,
+        "width": 16,
         "collapse": false
     },
     {
@@ -257,7 +257,7 @@
         "tab": "78b32a0c459040a2",
         "order": 2,
         "disp": true,
-        "width": 18,
+        "width": 14,
         "collapse": false
     },
     {
@@ -301,13 +301,23 @@
         "collapse": false
     },
     {
-        "id": "7346a045c0ec72f0",
+        "id": "4680f670a46ac6f9",
+        "type": "ui_spacer",
+        "z": "13bee6e068011382",
+        "name": "spacer",
+        "group": "6e1ba2a8a3b06598",
+        "order": 4,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "8e901907b5776010",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
         "group": "d129e0a0dad3a8d1",
         "order": 3,
-        "width": 12,
+        "width": 8,
         "height": 1
     },
     {
