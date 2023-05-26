@@ -1467,7 +1467,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "",
+        "icon": " fa-video-camera",
         "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
         "payloadType": "json",
         "topic": "topic",
