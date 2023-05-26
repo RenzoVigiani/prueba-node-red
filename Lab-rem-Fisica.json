@@ -1666,8 +1666,8 @@
         "label": "Enlace Radio por soft",
         "format": "{{msg.payload}}",
         "layout": "col-center",
-        "x": 1380,
-        "y": 400,
+        "x": 1360,
+        "y": 420,
         "wires": []
     },
     {
