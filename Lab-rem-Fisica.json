@@ -267,7 +267,7 @@
         "tab": "78b32a0c459040a2",
         "order": 5,
         "disp": true,
-        "width": "12",
+        "width": "8",
         "collapse": false
     },
     {
@@ -1545,7 +1545,7 @@
         "tooltip": "Angulo Azimut",
         "group": "d828ae6182d713dd",
         "order": 3,
-        "width": "10",
+        "width": "6",
         "height": "1",
         "passthru": true,
         "outs": "all",
@@ -1587,7 +1587,7 @@
         "tooltip": "Angulo Elevation",
         "group": "d828ae6182d713dd",
         "order": 1,
-        "width": "10",
+        "width": "6",
         "height": "1",
         "passthru": true,
         "outs": "all",
