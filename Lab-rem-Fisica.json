@@ -120,7 +120,7 @@
         "tab": "ce0f2688aa38dc08",
         "order": 5,
         "disp": true,
-        "width": "6",
+        "width": 13,
         "collapse": false
     },
     {
@@ -180,7 +180,7 @@
         "tab": "ce0f2688aa38dc08",
         "order": 6,
         "disp": true,
-        "width": "6",
+        "width": 13,
         "collapse": false
     },
     {
@@ -292,7 +292,7 @@
         "height": 1
     },
     {
-        "id": "bdcb059cf229c6ac",
+        "id": "814c310d03b3bf58",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
