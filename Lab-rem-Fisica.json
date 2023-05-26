@@ -286,8 +286,8 @@
         "name": "Esquema",
         "tab": "78b32a0c459040a2",
         "order": 2,
-        "disp": true,
-        "width": 17,
+        "disp": false,
+        "width": "17",
         "collapse": false
     },
     {
@@ -296,8 +296,8 @@
         "name": "Camara",
         "tab": "78b32a0c459040a2",
         "order": 3,
-        "disp": true,
-        "width": 17,
+        "disp": false,
+        "width": "17",
         "collapse": false
     },
     {
@@ -1545,11 +1545,11 @@
         "topic": "topic",
         "topicType": "msg",
         "style": "",
-        "onvalue": "Enlace Wifi 2.4 GHz",
+        "onvalue": "Cámara",
         "onvalueType": "str",
         "onicon": "",
         "oncolor": "",
-        "offvalue": "Enlace de radio por software",
+        "offvalue": "Esquema",
         "offvalueType": "str",
         "officon": "",
         "offcolor": "",
