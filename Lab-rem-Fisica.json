@@ -1546,32 +1546,8 @@
         "y": 860,
         "wires": [
             [
-                "4408a09f7da7a523",
-                "a1af730cb71c4dd0"
+                "4408a09f7da7a523"
             ]
-        ]
-    },
-    {
-        "id": "a1af730cb71c4dd0",
-        "type": "ui_media",
-        "z": "13bee6e068011382",
-        "group": "f5dc0d469bcfeca8",
-        "name": "Esquema",
-        "width": 14,
-        "height": 14,
-        "order": 1,
-        "category": "Esquema",
-        "file": "wifi2-4GHz.png",
-        "layout": "side",
-        "showcontrols": true,
-        "loop": false,
-        "onstart": true,
-        "scope": "local",
-        "tooltip": "",
-        "x": 440,
-        "y": 880,
-        "wires": [
-            []
         ]
     },
     {
@@ -1753,6 +1729,29 @@
             [
                 "314f45cdfdf206f9"
             ]
+        ]
+    },
+    {
+        "id": "5b226f834f2a41ae",
+        "type": "ui_media",
+        "z": "13bee6e068011382",
+        "group": "1da480d9eb9773f1",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 2,
+        "category": "Esquema",
+        "file": "wifi2-4GHz.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 690,
+        "y": 880,
+        "wires": [
+            []
         ]
     }
 ]
