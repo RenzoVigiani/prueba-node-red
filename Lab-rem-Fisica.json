@@ -1121,33 +1121,6 @@
         "wires": []
     },
     {
-        "id": "c2a095b4114b33a5",
-        "type": "ui_numeric",
-        "z": "13bee6e068011382",
-        "name": "",
-        "label": "Elevation",
-        "tooltip": "Angulo Elevation",
-        "group": "d828ae6182d713dd",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": "0",
-        "max": "90",
-        "step": "1",
-        "x": 320,
-        "y": 160,
-        "wires": [
-            [
-                "e0ab9e9c72bdd633"
-            ]
-        ]
-    },
-    {
         "id": "e0ab9e9c72bdd633",
         "type": "function",
         "z": "13bee6e068011382",
@@ -1604,5 +1577,31 @@
         "x": 800,
         "y": 160,
         "wires": []
+    },
+    {
+        "id": "4a59bc5bb4d222f8",
+        "type": "ui_slider",
+        "z": "13bee6e068011382",
+        "name": "",
+        "label": "Elevation",
+        "tooltip": "Angulo Elevation",
+        "group": "d828ae6182d713dd",
+        "order": 1,
+        "width": "10",
+        "height": "1",
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "90",
+        "step": 1,
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "e0ab9e9c72bdd633"
+            ]
+        ]
     }
 ]
