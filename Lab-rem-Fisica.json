@@ -247,7 +247,7 @@
         "tab": "78b32a0c459040a2",
         "order": 1,
         "disp": true,
-        "width": "13",
+        "width": 17,
         "collapse": false
     },
     {
@@ -299,6 +299,16 @@
         "disp": true,
         "width": 17,
         "collapse": false
+    },
+    {
+        "id": "11b37b70e929f7f2",
+        "type": "ui_spacer",
+        "z": "13bee6e068011382",
+        "name": "spacer",
+        "group": "6e1ba2a8a3b06598",
+        "order": 3,
+        "width": 4,
+        "height": 1
     },
     {
         "id": "059369056ca71f6f",
