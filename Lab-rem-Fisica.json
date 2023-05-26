@@ -301,7 +301,7 @@
         "collapse": false
     },
     {
-        "id": "95ce0401b35637b1",
+        "id": "48bde87b447eaee2",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,7 +311,7 @@
         "height": 1
     },
     {
-        "id": "270673a799a0a7a1",
+        "id": "1b877dea3b01c05b",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1167,7 +1167,7 @@
         "name": "Envio",
         "order": 1,
         "width": 13,
-        "height": 2,
+        "height": 3,
         "format": "<ul>\n<h1> Envio: </h1>\n        {{msg.payload}}\n      \n</ul>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1293,7 +1293,7 @@
         "name": "Recibe",
         "order": 2,
         "width": 13,
-        "height": 2,
+        "height": 3,
         "format": "<ul>\n<h1> Recibe: </h1>\n       {{msg.payload}}\n      \n</ul>",
         "storeOutMessages": true,
         "fwdInMessages": true,
