@@ -1612,10 +1612,10 @@
         "order": 6,
         "category": "Esquema",
         "file": "wifi2-4GHz.png",
-        "layout": "center",
+        "layout": "side",
         "showcontrols": true,
         "loop": false,
-        "onstart": false,
+        "onstart": true,
         "scope": "local",
         "tooltip": "",
         "x": 440,
@@ -1803,23 +1803,6 @@
             [
                 "314f45cdfdf206f9"
             ]
-        ]
-    },
-    {
-        "id": "191292464d25d236",
-        "type": "function",
-        "z": "13bee6e068011382",
-        "name": "abrir camara",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.100.2:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 860,
-        "wires": [
-            []
         ]
     }
 ]
