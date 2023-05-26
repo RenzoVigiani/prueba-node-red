@@ -1469,11 +1469,11 @@
         "min": 0,
         "max": "180",
         "step": 1,
-        "x": 90,
+        "x": 270,
         "y": 40,
         "wires": [
             [
-                "24cf9e5f073b85a5"
+                "4bb92b037d1a0ca7"
             ]
         ]
     },
@@ -1495,11 +1495,11 @@
         "min": 0,
         "max": "90",
         "step": 1,
-        "x": 80,
+        "x": 260,
         "y": 100,
         "wires": [
             [
-                "5bd2a1b1ab96e30d"
+                "e0ab9e9c72bdd633"
             ]
         ]
     },
@@ -1730,54 +1730,6 @@
         "wires": [
             [
                 "314f45cdfdf206f9"
-            ]
-        ]
-    },
-    {
-        "id": "24cf9e5f073b85a5",
-        "type": "ui_text_input",
-        "z": "13bee6e068011382",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "group": "d828ae6182d713dd",
-        "order": 1,
-        "width": "1",
-        "height": "2",
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 250,
-        "y": 40,
-        "wires": [
-            [
-                "4bb92b037d1a0ca7"
-            ]
-        ]
-    },
-    {
-        "id": "5bd2a1b1ab96e30d",
-        "type": "ui_text_input",
-        "z": "13bee6e068011382",
-        "name": "",
-        "label": "",
-        "tooltip": "",
-        "group": "d828ae6182d713dd",
-        "order": 4,
-        "width": "1",
-        "height": "1",
-        "passthru": true,
-        "mode": "number",
-        "delay": 300,
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 250,
-        "y": 100,
-        "wires": [
-            [
-                "e0ab9e9c72bdd633"
             ]
         ]
     }
