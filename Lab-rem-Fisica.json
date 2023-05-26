@@ -243,7 +243,6 @@
     {
         "id": "6e1ba2a8a3b06598",
         "type": "ui_group",
-        "d": true,
         "name": "Tipo de laboratorio",
         "tab": "78b32a0c459040a2",
         "order": 1,
@@ -1404,7 +1403,7 @@
         "order": 2,
         "width": 7,
         "height": 1,
-        "passthru": true,
+        "passthru": false,
         "label": "Cámara",
         "tooltip": "",
         "color": "",
