@@ -301,7 +301,7 @@
         "collapse": false
     },
     {
-        "id": "0c1ad21935dfa331",
+        "id": "486265796fe013ae",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,63 +311,13 @@
         "height": 1
     },
     {
-        "id": "48cea4ef16496583",
+        "id": "569a91cf97de07e3",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
         "group": "d129e0a0dad3a8d1",
         "order": 3,
         "width": 8,
-        "height": 1
-    },
-    {
-        "id": "eef4f0d9f866a8b5",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "f5dc0d469bcfeca8",
-        "order": 1,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "08746254a2e69d81",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "f5dc0d469bcfeca8",
-        "order": 2,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "abb592044e6859a8",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "f5dc0d469bcfeca8",
-        "order": 3,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "62771160a53503e1",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "f5dc0d469bcfeca8",
-        "order": 4,
-        "width": 14,
-        "height": 1
-    },
-    {
-        "id": "29fb8a97d663bc4b",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "f5dc0d469bcfeca8",
-        "order": 5,
-        "width": 14,
         "height": 1
     },
     {
@@ -1607,9 +1557,9 @@
         "z": "13bee6e068011382",
         "group": "f5dc0d469bcfeca8",
         "name": "Esquema",
-        "width": "14",
-        "height": "14",
-        "order": 6,
+        "width": 14,
+        "height": 14,
+        "order": 1,
         "category": "Esquema",
         "file": "wifi2-4GHz.png",
         "layout": "side",
