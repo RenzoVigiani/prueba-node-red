@@ -301,7 +301,7 @@
         "collapse": false
     },
     {
-        "id": "024f23cd6a83ba6b",
+        "id": "1658d1f3cddc26b1",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,7 +311,7 @@
         "height": 1
     },
     {
-        "id": "9331aab3cb085a0c",
+        "id": "ad8691dbe1327040",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -321,7 +321,7 @@
         "height": 1
     },
     {
-        "id": "11f503dda1b2fe29",
+        "id": "e11701c7130e94d3",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1723,8 +1723,8 @@
         "name": "",
         "order": 1,
         "width": 17,
-        "height": 8,
-        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"80%\" height=\"80%\" src=\"{{msg.payload}}\"/>",
+        "height": 11,
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
