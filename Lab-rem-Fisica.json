@@ -265,7 +265,7 @@
         "type": "ui_group",
         "name": "Parámetros",
         "tab": "78b32a0c459040a2",
-        "order": 3,
+        "order": 2,
         "disp": true,
         "width": "8",
         "collapse": false
@@ -275,7 +275,7 @@
         "type": "ui_group",
         "name": "Panel de control",
         "tab": "78b32a0c459040a2",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": 8,
         "collapse": false
