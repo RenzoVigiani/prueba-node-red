@@ -1562,7 +1562,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
+        "x": 520,
         "y": 240,
         "wires": [
             []
@@ -1596,7 +1596,9 @@
         "x": 250,
         "y": 760,
         "wires": [
-            []
+            [
+                "2de388d9857460af"
+            ]
         ]
     },
     {
@@ -1722,5 +1724,40 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2de388d9857460af",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "variable_elevation",
+        "func": "flow.set(\"tipo\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 760,
+        "wires": [
+            [
+                "feedc508afec4e53"
+            ]
+        ]
+    },
+    {
+        "id": "feedc508afec4e53",
+        "type": "ui_text",
+        "z": "13bee6e068011382",
+        "group": "1da480d9eb9773f1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 790,
+        "y": 760,
+        "wires": []
     }
 ]
