@@ -1376,35 +1376,6 @@
         ]
     },
     {
-        "id": "40fb945095906877",
-        "type": "inject",
-        "z": "13bee6e068011382",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 960,
-        "y": 260,
-        "wires": [
-            [
-                "1b992246c7554d67"
-            ]
-        ]
-    },
-    {
         "id": "1b992246c7554d67",
         "type": "function",
         "z": "13bee6e068011382",
@@ -1776,9 +1747,9 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
