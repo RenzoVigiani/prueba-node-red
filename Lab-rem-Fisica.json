@@ -1012,6 +1012,29 @@
         ]
     },
     {
+        "id": "275de9a051c05314",
+        "type": "ui_media",
+        "z": "947c53d08c93935d",
+        "group": "a4c87799322f977e",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 0,
+        "category": "Esquema",
+        "file": "diagrama_virtual_distancias.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 710,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
         "id": "4bb92b037d1a0ca7",
         "type": "function",
         "z": "13bee6e068011382",
