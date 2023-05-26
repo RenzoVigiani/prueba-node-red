@@ -258,7 +258,7 @@
         "tab": "78b32a0c459040a2",
         "order": 1,
         "disp": false,
-        "width": "13",
+        "width": 17,
         "collapse": false
     },
     {
@@ -302,7 +302,17 @@
         "collapse": false
     },
     {
-        "id": "6180395476cd89e9",
+        "id": "3676150f1cb4c81b",
+        "type": "ui_spacer",
+        "z": "13bee6e068011382",
+        "name": "spacer",
+        "group": "d129e0a0dad3a8d1",
+        "order": 3,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b9785b08a3d29a75",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
