@@ -1095,7 +1095,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "🆗",
+        "icon": "check",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
@@ -1341,8 +1341,8 @@
         "z": "13bee6e068011382",
         "name": "",
         "events": "all",
-        "x": 460,
-        "y": 760,
+        "x": 540,
+        "y": 720,
         "wires": [
             []
         ]
@@ -1366,8 +1366,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 250,
-        "y": 740,
+        "x": 330,
+        "y": 700,
         "wires": [
             [
                 "4408a09f7da7a523"
@@ -1393,8 +1393,8 @@
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 250,
-        "y": 780,
+        "x": 330,
+        "y": 740,
         "wires": [
             [
                 "4408a09f7da7a523"
@@ -1532,7 +1532,7 @@
         "type": "ui_button",
         "z": "13bee6e068011382",
         "name": "",
-        "group": "6ca12bd8aeff9f61",
+        "group": "42e3dc25bebff629",
         "order": 1,
         "width": "4",
         "height": "1",
