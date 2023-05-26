@@ -1583,7 +1583,7 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "x": 250,
+        "x": 230,
         "y": 760,
         "wires": [
             [
@@ -1727,7 +1727,7 @@
         "label": "",
         "format": "{{msg.payload}}",
         "layout": "col-center",
-        "x": 790,
+        "x": 490,
         "y": 760,
         "wires": []
     }
