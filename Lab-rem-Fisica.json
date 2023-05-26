@@ -1214,7 +1214,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "reply",
+        "icon": "fa-reply",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
