@@ -1311,8 +1311,8 @@
         "z": "13bee6e068011382",
         "name": "",
         "events": "change",
-        "x": 1180,
-        "y": 300,
+        "x": 1160,
+        "y": 120,
         "wires": [
             []
         ]
@@ -1397,7 +1397,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 960,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "1b992246c7554d67"
@@ -1463,7 +1463,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 960,
-        "y": 280,
+        "y": 180,
         "wires": [
             [
                 "1b992246c7554d67",
@@ -1543,7 +1543,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 960,
-        "y": 380,
+        "y": 100,
         "wires": [
             [
                 "4408a09f7da7a523",
@@ -1657,15 +1657,15 @@
         "id": "8f0c97ce9cfed99a",
         "type": "function",
         "z": "13bee6e068011382",
-        "name": "abrir camara",
+        "name": "abrir esquema",
         "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Camara1';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1150,
-        "y": 380,
+        "x": 1160,
+        "y": 40,
         "wires": [
             [
                 "b9b6f5853e754e88"
@@ -1687,7 +1687,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 1360,
-        "y": 380,
+        "y": 40,
         "wires": [
             []
         ]
@@ -1759,6 +1759,35 @@
         "wires": [
             [
                 "314f45cdfdf206f9"
+            ]
+        ]
+    },
+    {
+        "id": "fbd57c411897d0e2",
+        "type": "inject",
+        "z": "13bee6e068011382",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 960,
+        "y": 20,
+        "wires": [
+            [
+                "8f0c97ce9cfed99a"
             ]
         ]
     }
