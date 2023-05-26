@@ -287,7 +287,7 @@
         "tab": "78b32a0c459040a2",
         "order": 5,
         "disp": true,
-        "width": "6",
+        "width": "14",
         "collapse": false
     },
     {
@@ -297,11 +297,11 @@
         "tab": "78b32a0c459040a2",
         "order": 6,
         "disp": true,
-        "width": "6",
+        "width": 14,
         "collapse": false
     },
     {
-        "id": "4680f670a46ac6f9",
+        "id": "90aff55ef658d65d",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,7 +311,7 @@
         "height": 1
     },
     {
-        "id": "8e901907b5776010",
+        "id": "39272c62311b72e6",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1430,7 +1430,7 @@
         "group": "692aca9c657c5110",
         "name": "",
         "order": 1,
-        "width": 6,
+        "width": 14,
         "height": 6,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
@@ -1556,7 +1556,7 @@
         "type": "ui_media",
         "z": "13bee6e068011382",
         "group": "f5dc0d469bcfeca8",
-        "name": "",
+        "name": "Esquema",
         "width": 0,
         "height": 0,
         "order": 1,
@@ -1568,8 +1568,8 @@
         "onstart": false,
         "scope": "local",
         "tooltip": "",
-        "x": 470,
-        "y": 960,
+        "x": 540,
+        "y": 920,
         "wires": [
             []
         ]
@@ -1817,6 +1817,23 @@
         "events": "all",
         "x": 460,
         "y": 1040,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "191292464d25d236",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "abrir camara",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.100.2:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 860,
         "wires": [
             []
         ]
