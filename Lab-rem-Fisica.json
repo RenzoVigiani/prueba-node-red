@@ -1042,7 +1042,6 @@
         "y": 60,
         "wires": [
             [
-                "f5541538ea63a1eb",
                 "14c481a531b39210"
             ]
         ]
@@ -1126,7 +1125,7 @@
         "y": 160,
         "wires": [
             [
-                "7698a14c8db0a2fc"
+                "2fe8cde865bac093"
             ]
         ]
     },
@@ -1443,23 +1442,6 @@
         ]
     },
     {
-        "id": "f5541538ea63a1eb",
-        "type": "ui_text",
-        "z": "13bee6e068011382",
-        "d": true,
-        "group": "d828ae6182d713dd",
-        "order": 4,
-        "width": 2,
-        "height": 1,
-        "name": "valor_azimut",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "x": 790,
-        "y": 60,
-        "wires": []
-    },
-    {
         "id": "71b0ee9be7570e95",
         "type": "ui_slider",
         "z": "13bee6e068011382",
@@ -1484,22 +1466,6 @@
                 "4bb92b037d1a0ca7"
             ]
         ]
-    },
-    {
-        "id": "7698a14c8db0a2fc",
-        "type": "ui_text",
-        "z": "13bee6e068011382",
-        "group": "d828ae6182d713dd",
-        "order": 2,
-        "width": 2,
-        "height": 1,
-        "name": "valor_elevation",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "x": 800,
-        "y": 160,
-        "wires": []
     },
     {
         "id": "4a59bc5bb4d222f8",
@@ -1703,7 +1669,7 @@
         "id": "14c481a531b39210",
         "type": "ui_gauge",
         "z": "13bee6e068011382",
-        "name": "Medida",
+        "name": "valor_azimut",
         "group": "d828ae6182d713dd",
         "order": 5,
         "width": "2",
@@ -1721,8 +1687,34 @@
         ],
         "seg1": "",
         "seg2": "",
+        "x": 810,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2fe8cde865bac093",
+        "type": "ui_gauge",
+        "z": "13bee6e068011382",
+        "name": "valor_elevation",
+        "group": "d828ae6182d713dd",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "gtype": "gage",
+        "title": "",
+        "label": "deg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "180",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "90",
         "x": 800,
-        "y": 100,
+        "y": 160,
         "wires": []
     }
 ]
