@@ -2,7 +2,15 @@
     {
         "id": "947c53d08c93935d",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Física",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "13bee6e068011382",
+        "type": "tab",
+        "label": "Telecom",
         "disabled": false,
         "info": "",
         "env": []
@@ -222,6 +230,75 @@
         "order": 8,
         "width": "6",
         "height": "1"
+    },
+    {
+        "id": "78b32a0c459040a2",
+        "type": "ui_tab",
+        "name": "Telecomunicaciones",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6e1ba2a8a3b06598",
+        "type": "ui_group",
+        "name": "Tipo de laboratorio",
+        "tab": "78b32a0c459040a2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d129e0a0dad3a8d1",
+        "type": "ui_group",
+        "name": "Visualización",
+        "tab": "78b32a0c459040a2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d828ae6182d713dd",
+        "type": "ui_group",
+        "name": "Parámetros",
+        "tab": "78b32a0c459040a2",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "42e3dc25bebff629",
+        "type": "ui_group",
+        "name": "Camara",
+        "tab": "78b32a0c459040a2",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "544bd628b7ddfc1a",
+        "type": "ui_group",
+        "name": "Panel de control",
+        "tab": "78b32a0c459040a2",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9270f4696ce95e3a",
+        "type": "ui_group",
+        "name": "Esquema",
+        "tab": "78b32a0c459040a2",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "059369056ca71f6f",
@@ -957,6 +1034,523 @@
         "wires": [
             [
                 "7d1ad2eacf1d4aca"
+            ]
+        ]
+    },
+    {
+        "id": "5a6bcb2751185545",
+        "type": "ui_numeric",
+        "z": "13bee6e068011382",
+        "name": "",
+        "label": "Azimut",
+        "tooltip": "Angulo Azimut",
+        "group": "d828ae6182d713dd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "180",
+        "step": 1,
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "4bb92b037d1a0ca7"
+            ]
+        ]
+    },
+    {
+        "id": "4bb92b037d1a0ca7",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "variable_azimut",
+        "func": "flow.set(\"azimut\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2698bdf7b9dba519",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "544bd628b7ddfc1a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "POST",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "🆗",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 320,
+        "wires": [
+            [
+                "9d46f815dcdbba21"
+            ]
+        ]
+    },
+    {
+        "id": "9d46f815dcdbba21",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "function 20",
+        "func": "let diafragma = flow.get(\"diafragma\");\nlet dist_FL1 =flow.get(\"dist_FL1\");\nlet dist_L2P = flow.get(\"dist_L2P\");\nlet dist_L1L2 = flow.get(\"dist_L1L2\");\nmsg.payload = \"POST /HTTP/1.1 { \\\"Estado\\\": [3,true,true],\\\"Analogico\\\": [\" + diafragma + \",\" + dist_FL1 + \",\" + dist_L2P + \"]} \"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "c860518de3fa4831",
+                "bdbbc14c55bd084b",
+                "2bb3c595dac6d725"
+            ]
+        ]
+    },
+    {
+        "id": "c860518de3fa4831",
+        "type": "debug",
+        "z": "13bee6e068011382",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "c2a095b4114b33a5",
+        "type": "ui_numeric",
+        "z": "13bee6e068011382",
+        "name": "",
+        "label": "Elevation",
+        "tooltip": "Angulo Elevation",
+        "group": "d828ae6182d713dd",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "90",
+        "step": "1",
+        "x": 320,
+        "y": 160,
+        "wires": [
+            [
+                "e0ab9e9c72bdd633"
+            ]
+        ]
+    },
+    {
+        "id": "e0ab9e9c72bdd633",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "variable_elevation",
+        "func": "flow.set(\"elevation\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdbbc14c55bd084b",
+        "type": "ui_template",
+        "z": "13bee6e068011382",
+        "group": "c83e16537c45f368",
+        "name": "Envio",
+        "order": 1,
+        "width": 6,
+        "height": "3",
+        "format": "<ul>\n<h1> Envio: </h1>\n        <li>{{msg.payload}}</li>\n      \n</ul>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 790,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7877763a0be4055b",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "function 23",
+        "func": "msg.payload =\"GET /HTTP/1.1\"\n//msg.payload = \"GET / HTTP/1.1\\r\\n\\r\\nHOST: www.google.com\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 440,
+        "wires": [
+            [
+                "c860518de3fa4831",
+                "bdbbc14c55bd084b",
+                "2bb3c595dac6d725"
+            ]
+        ]
+    },
+    {
+        "id": "f38ad0a54ec8a6a2",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "544bd628b7ddfc1a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "GET",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "🔙",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 420,
+        "wires": [
+            [
+                "7877763a0be4055b"
+            ]
+        ]
+    },
+    {
+        "id": "2bb3c595dac6d725",
+        "type": "tcp request",
+        "z": "13bee6e068011382",
+        "name": "",
+        "server": "127.0.0.1",
+        "port": "80",
+        "out": "time",
+        "ret": "buffer",
+        "splitc": "1000",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 820,
+        "y": 440,
+        "wires": [
+            [
+                "6e9345b731f87a29"
+            ]
+        ]
+    },
+    {
+        "id": "cd9d49e8c458829d",
+        "type": "debug",
+        "z": "13bee6e068011382",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6e9345b731f87a29",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "function 24",
+        "func": "msg.payload = msg.payload.toString('utf8');\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 440,
+        "wires": [
+            [
+                "cd9d49e8c458829d",
+                "48bb9fa356c05d67"
+            ]
+        ]
+    },
+    {
+        "id": "48bb9fa356c05d67",
+        "type": "ui_template",
+        "z": "13bee6e068011382",
+        "group": "c83e16537c45f368",
+        "name": "Recibe",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "format": "<ul>\n<h1> Recibe: </h1>\n        <li>{{msg.payload}}</li>\n      \n</ul>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1240,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4408a09f7da7a523",
+        "type": "ui_ui_control",
+        "z": "13bee6e068011382",
+        "name": "",
+        "events": "all",
+        "x": 460,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38d0061b649f4a0f",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "1da480d9eb9773f1",
+        "order": 1,
+        "width": "13",
+        "height": 1,
+        "passthru": false,
+        "label": "Convergente",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":[\"Home_Mode\",\"Home_Funciones\",\"Home_Parametros-con\",\"Home_Consola\",\"Home_Convergente\",\"Home_Camara\"],\"hide\":[\"Home_Divergente\",\"Home_Parametros-div\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 740,
+        "wires": [
+            [
+                "4408a09f7da7a523"
+            ]
+        ]
+    },
+    {
+        "id": "d887ee08c00ae966",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "1da480d9eb9773f1",
+        "order": 3,
+        "width": "13",
+        "height": 1,
+        "passthru": false,
+        "label": "Divergente",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":[\"Home_Mode\",\"Home_Funciones\",\"Home_Parametros-div\",\"Home_Consola\",\"Home_Divergente\",\"Home_Camara\"],\"hide\":[\"Home_Convergente\",\"Home_Parametros-con\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 780,
+        "wires": [
+            [
+                "4408a09f7da7a523"
+            ]
+        ]
+    },
+    {
+        "id": "df77753d5fb3167c",
+        "type": "inject",
+        "z": "13bee6e068011382",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 460,
+        "wires": [
+            [
+                "7877763a0be4055b"
+            ]
+        ]
+    },
+    {
+        "id": "116b085c2a4b7879",
+        "type": "inject",
+        "z": "13bee6e068011382",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "9d46f815dcdbba21"
+            ]
+        ]
+    },
+    {
+        "id": "40fb945095906877",
+        "type": "inject",
+        "z": "13bee6e068011382",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 540,
+        "wires": [
+            [
+                "1b992246c7554d67"
+            ]
+        ]
+    },
+    {
+        "id": "1b992246c7554d67",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "function 29",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.100.2:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 540,
+        "wires": [
+            [
+                "b4dc737793a6eabb"
+            ]
+        ]
+    },
+    {
+        "id": "b4dc737793a6eabb",
+        "type": "ui_template",
+        "z": "13bee6e068011382",
+        "group": "6ca12bd8aeff9f61",
+        "name": "",
+        "order": 0,
+        "width": "24",
+        "height": "18",
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n        box-shadow: 0 5px 25px #2EE06E\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 740,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "80311f0a7546bff3",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "6ca12bd8aeff9f61",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "passthru": true,
+        "label": "cam",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "1b992246c7554d67"
             ]
         ]
     }
