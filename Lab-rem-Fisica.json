@@ -267,7 +267,7 @@
         "tab": "78b32a0c459040a2",
         "order": 2,
         "disp": true,
-        "width": "8",
+        "width": 6,
         "collapse": false
     },
     {
@@ -277,11 +277,11 @@
         "tab": "78b32a0c459040a2",
         "order": 3,
         "disp": true,
-        "width": "8",
+        "width": 10,
         "collapse": false
     },
     {
-        "id": "0d8be7b4175ef180",
+        "id": "4a6f12949db9c4cb",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -291,7 +291,7 @@
         "height": 1
     },
     {
-        "id": "b6c0873cd63218bc",
+        "id": "129da76c3c7806d6",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -301,7 +301,7 @@
         "height": 1
     },
     {
-        "id": "f6ba38c2fca76d85",
+        "id": "bc5224a4273e211b",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,7 +311,7 @@
         "height": 1
     },
     {
-        "id": "8917d1260eabe283",
+        "id": "12ef51d671a29001",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1166,8 +1166,8 @@
         "group": "544bd628b7ddfc1a",
         "name": "Envio",
         "order": 1,
-        "width": 8,
-        "height": 4,
+        "width": 10,
+        "height": 3,
         "format": "<ul>\n<h1> Envio: </h1>\n        {{msg.payload}}\n      \n</ul>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1292,8 +1292,8 @@
         "group": "544bd628b7ddfc1a",
         "name": "Recibe",
         "order": 2,
-        "width": 8,
-        "height": 4,
+        "width": 10,
+        "height": 3,
         "format": "<ul>\n<h1> Recibe: </h1>\n       {{msg.payload}}\n      \n</ul>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1480,7 +1480,7 @@
         "tooltip": "Angulo Azimut",
         "group": "d828ae6182d713dd",
         "order": 1,
-        "width": 6,
+        "width": 4,
         "height": 2,
         "passthru": true,
         "outs": "all",
@@ -1506,7 +1506,7 @@
         "tooltip": "Angulo Elevation",
         "group": "d828ae6182d713dd",
         "order": 3,
-        "width": 6,
+        "width": 4,
         "height": 2,
         "passthru": true,
         "outs": "all",
@@ -1731,7 +1731,7 @@
         "tooltip": "",
         "group": "d828ae6182d713dd",
         "order": 5,
-        "width": 8,
+        "width": 6,
         "height": 1,
         "passthru": true,
         "decouple": "false",
