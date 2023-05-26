@@ -1090,7 +1090,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "f064",
+        "icon": "<i class=\"fa fa-share\" aria-hidden=\"true\"></i>",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
