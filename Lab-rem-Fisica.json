@@ -301,8 +301,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 240,
+        "x": 400,
+        "y": 260,
         "wires": [
             []
         ]
@@ -1149,7 +1149,7 @@
         "y": 240,
         "wires": [
             [
-                "20b6fa6c0d47944c"
+                "059369056ca71f6f"
             ]
         ]
     },
@@ -1171,20 +1171,21 @@
         ]
     },
     {
-        "id": "20b6fa6c0d47944c",
-        "type": "ui_slider",
+        "id": "059369056ca71f6f",
+        "type": "ui_numeric",
         "z": "947c53d08c93935d",
         "name": "",
-        "label": "slider",
+        "label": "Diafragma",
         "tooltip": "",
-        "group": "1da480d9eb9773f1",
+        "group": "fba5dd2093002ecd",
         "order": 1,
         "width": 0,
         "height": 0,
+        "wrap": false,
         "passthru": true,
-        "outs": "all",
         "topic": "topic",
         "topicType": "msg",
+        "format": "{{value}}",
         "min": 0,
         "max": "3",
         "step": 1,
