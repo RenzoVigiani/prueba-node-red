@@ -1281,8 +1281,8 @@
         "z": "13bee6e068011382",
         "name": "",
         "events": "all",
-        "x": 560,
-        "y": 700,
+        "x": 500,
+        "y": 660,
         "wires": [
             []
         ]
@@ -1561,7 +1561,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 320,
-        "y": 740,
+        "y": 700,
         "wires": [
             [
                 "4408a09f7da7a523",
@@ -1643,7 +1643,7 @@
         "name": "",
         "label": "Tipo",
         "tooltip": "",
-        "group": "1da480d9eb9773f1",
+        "group": "6e1ba2a8a3b06598",
         "order": 2,
         "width": 0,
         "height": 0,
