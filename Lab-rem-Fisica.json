@@ -1577,7 +1577,7 @@
         "tooltip": "",
         "group": "6e1ba2a8a3b06598",
         "order": 1,
-        "width": 3,
+        "width": "8",
         "height": 1,
         "passthru": true,
         "decouple": "false",
