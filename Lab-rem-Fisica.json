@@ -301,7 +301,7 @@
         "collapse": false
     },
     {
-        "id": "48bde87b447eaee2",
+        "id": "f3d01ce4a2f2a5cf",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,7 +311,7 @@
         "height": 1
     },
     {
-        "id": "1b877dea3b01c05b",
+        "id": "1b680f0c507d08dd",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1402,7 +1402,7 @@
         "name": "",
         "order": 1,
         "width": 17,
-        "height": 11,
+        "height": 13,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
