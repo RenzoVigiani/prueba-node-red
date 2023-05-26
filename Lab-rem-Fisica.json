@@ -1695,11 +1695,11 @@
         "type": "ui_switch",
         "z": "13bee6e068011382",
         "name": "",
-        "label": "Iniciar",
+        "label": "Iniciar experiencia",
         "tooltip": "",
         "group": "544bd628b7ddfc1a",
         "order": 2,
-        "width": "3",
+        "width": "8",
         "height": "1",
         "passthru": true,
         "decouple": "false",
@@ -1715,7 +1715,7 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "x": 230,
+        "x": 270,
         "y": 240,
         "wires": [
             [
