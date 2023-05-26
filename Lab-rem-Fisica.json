@@ -1194,7 +1194,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "arrow",
+        "icon": "reply",
         "payload": "",
         "payloadType": "str",
         "topic": "topic",
