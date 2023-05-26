@@ -1442,22 +1442,6 @@
         ]
     },
     {
-        "id": "e1459473caf4d83d",
-        "type": "ui_text",
-        "z": "13bee6e068011382",
-        "group": "6e1ba2a8a3b06598",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Enlace Wifi 2.4 GHz",
-        "format": "{{msg.payload}}",
-        "layout": "col-center",
-        "x": 1460,
-        "y": 160,
-        "wires": []
-    },
-    {
         "id": "f5541538ea63a1eb",
         "type": "ui_text",
         "z": "13bee6e068011382",
@@ -1641,12 +1625,12 @@
         "type": "ui_switch",
         "z": "13bee6e068011382",
         "name": "",
-        "label": "Tipo",
+        "label": "",
         "tooltip": "",
         "group": "6e1ba2a8a3b06598",
         "order": 2,
-        "width": 0,
-        "height": 0,
+        "width": "3",
+        "height": "1",
         "passthru": true,
         "decouple": "false",
         "topic": "topic",
@@ -1661,12 +1645,56 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "x": 1270,
+        "x": 1090,
         "y": 160,
         "wires": [
             [
-                "e1459473caf4d83d"
+                "6b9f6f1fa4a8a6cc"
             ]
         ]
+    },
+    {
+        "id": "6b9f6f1fa4a8a6cc",
+        "type": "ui_ui_control",
+        "z": "13bee6e068011382",
+        "name": "",
+        "events": "all",
+        "x": 1260,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1459473caf4d83d",
+        "type": "ui_text",
+        "z": "13bee6e068011382",
+        "group": "6e1ba2a8a3b06598",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Enlace Wifi 2.4 GHz",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1480,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "bce84fb1cec1b01d",
+        "type": "ui_text",
+        "z": "13bee6e068011382",
+        "group": "6e1ba2a8a3b06598",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Enlace Radio por soft",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1480,
+        "y": 240,
+        "wires": []
     }
 ]
