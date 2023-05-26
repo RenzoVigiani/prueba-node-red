@@ -301,17 +301,7 @@
         "collapse": false
     },
     {
-        "id": "6dc67d4a01b72051",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "6e1ba2a8a3b06598",
-        "order": 2,
-        "width": 9,
-        "height": 1
-    },
-    {
-        "id": "1786b9392deb8c91",
+        "id": "7f6b3bc6a4250f08",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1730,9 +1720,9 @@
         "type": "ui_text",
         "z": "13bee6e068011382",
         "group": "6e1ba2a8a3b06598",
-        "order": 3,
-        "width": "3",
-        "height": "1",
+        "order": 2,
+        "width": 9,
+        "height": 1,
         "name": "",
         "label": "",
         "format": "{{msg.payload}}",
