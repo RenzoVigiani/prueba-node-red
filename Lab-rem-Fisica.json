@@ -1546,7 +1546,8 @@
         "y": 860,
         "wires": [
             [
-                "4408a09f7da7a523"
+                "4408a09f7da7a523",
+                "8f0c97ce9cfed99a"
             ]
         ]
     },
@@ -1750,6 +1751,23 @@
         "tooltip": "",
         "x": 690,
         "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f0c97ce9cfed99a",
+        "type": "function",
+        "z": "13bee6e068011382",
+        "name": "abrir camara",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Camara1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 900,
         "wires": [
             []
         ]
