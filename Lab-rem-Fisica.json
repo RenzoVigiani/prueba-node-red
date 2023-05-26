@@ -301,7 +301,7 @@
         "collapse": false
     },
     {
-        "id": "486265796fe013ae",
+        "id": "497691945da0bc83",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -311,7 +311,7 @@
         "height": 1
     },
     {
-        "id": "569a91cf97de07e3",
+        "id": "e101e4801d5901e0",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
@@ -1431,7 +1431,7 @@
         "name": "",
         "order": 1,
         "width": 14,
-        "height": 6,
+        "height": 11,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1739,7 +1739,7 @@
         "name": "",
         "width": 0,
         "height": 0,
-        "order": 2,
+        "order": 1,
         "category": "Esquema",
         "file": "wifi2-4GHz.png",
         "layout": "adjust",
