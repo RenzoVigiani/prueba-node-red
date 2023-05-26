@@ -95,10 +95,10 @@
             }
         },
         "site": {
-            "name": "Node-RED Dashboard",
+            "name": "Laboratorios Remotos FACET",
             "hideToolbar": "false",
             "allowSwipe": "false",
-            "lockMenu": "true",
+            "lockMenu": "false",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
