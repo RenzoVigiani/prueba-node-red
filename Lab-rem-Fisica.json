@@ -247,7 +247,7 @@
         "tab": "78b32a0c459040a2",
         "order": 1,
         "disp": true,
-        "width": 30,
+        "width": 24,
         "collapse": false
     },
     {
@@ -255,9 +255,9 @@
         "type": "ui_group",
         "name": "Visualización",
         "tab": "78b32a0c459040a2",
-        "order": 4,
+        "order": 2,
         "disp": true,
-        "width": 14,
+        "width": 6,
         "collapse": false
     },
     {
@@ -265,7 +265,7 @@
         "type": "ui_group",
         "name": "Parámetros",
         "tab": "78b32a0c459040a2",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": 6,
         "collapse": false
@@ -275,49 +275,49 @@
         "type": "ui_group",
         "name": "Panel de control",
         "tab": "78b32a0c459040a2",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": 10,
         "collapse": false
     },
     {
-        "id": "4a6f12949db9c4cb",
+        "id": "f5dc0d469bcfeca8",
+        "type": "ui_group",
+        "name": "Esquema",
+        "tab": "78b32a0c459040a2",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "692aca9c657c5110",
+        "type": "ui_group",
+        "name": "Camara",
+        "tab": "78b32a0c459040a2",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2bcbfd2451703e10",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
         "group": "6e1ba2a8a3b06598",
-        "order": 4,
-        "width": 2,
+        "order": 3,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "129da76c3c7806d6",
+        "id": "c5c32a27c25ed099",
         "type": "ui_spacer",
         "z": "13bee6e068011382",
         "name": "spacer",
         "group": "6e1ba2a8a3b06598",
         "order": 5,
-        "width": 3,
-        "height": 1
-    },
-    {
-        "id": "bc5224a4273e211b",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "6e1ba2a8a3b06598",
-        "order": 6,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "12ef51d671a29001",
-        "type": "ui_spacer",
-        "z": "13bee6e068011382",
-        "name": "spacer",
-        "group": "d129e0a0dad3a8d1",
-        "order": 3,
-        "width": 8,
+        "width": 1,
         "height": 1
     },
     {
@@ -1311,8 +1311,8 @@
         "z": "13bee6e068011382",
         "name": "",
         "events": "all",
-        "x": 520,
-        "y": 820,
+        "x": 840,
+        "y": 800,
         "wires": [
             []
         ]
@@ -1427,10 +1427,10 @@
         "id": "b4dc737793a6eabb",
         "type": "ui_template",
         "z": "13bee6e068011382",
-        "group": "d129e0a0dad3a8d1",
+        "group": "692aca9c657c5110",
         "name": "",
-        "order": 5,
-        "width": 14,
+        "order": 1,
+        "width": 6,
         "height": 6,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
@@ -1458,8 +1458,8 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "",
-        "payloadType": "str",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\"],\"hide\":[\"Home_Divergente\",\"Home_Parametros-div\"]}}",
+        "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
         "x": 220,
@@ -1555,11 +1555,11 @@
         "id": "a1af730cb71c4dd0",
         "type": "ui_media",
         "z": "13bee6e068011382",
-        "group": "d129e0a0dad3a8d1",
+        "group": "f5dc0d469bcfeca8",
         "name": "",
         "width": 0,
         "height": 0,
-        "order": 4,
+        "order": 1,
         "category": "",
         "file": "",
         "layout": "adjust",
@@ -1644,8 +1644,8 @@
         "z": "13bee6e068011382",
         "group": "6e1ba2a8a3b06598",
         "order": 2,
-        "width": 13,
-        "height": 2,
+        "width": 9,
+        "height": 1,
         "name": "",
         "label": "Enlace Wifi 2.4 GHz",
         "format": "{{msg.payload}}",
@@ -1659,9 +1659,9 @@
         "type": "ui_text",
         "z": "13bee6e068011382",
         "group": "6e1ba2a8a3b06598",
-        "order": 3,
-        "width": 12,
-        "height": 2,
+        "order": 4,
+        "width": 10,
+        "height": 1,
         "name": "",
         "label": "Enlace Radio por soft",
         "format": "{{msg.payload}}",
@@ -1753,6 +1753,72 @@
             [
                 "314f45cdfdf206f9"
             ]
+        ]
+    },
+    {
+        "id": "cdadb0bf38c602d7",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "1da480d9eb9773f1",
+        "order": 1,
+        "width": "13",
+        "height": 1,
+        "passthru": false,
+        "label": "Convergente",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":[\"Home_Mode\",\"Home_Funciones\",\"Home_Parametros-con\",\"Home_Consola\",\"Home_Convergente\",\"Home_Camara\"],\"hide\":[\"Home_Divergente\",\"Home_Parametros-div\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 1020,
+        "wires": [
+            [
+                "0c595b3eb8db6aa7"
+            ]
+        ]
+    },
+    {
+        "id": "d875ec5b05a785c6",
+        "type": "ui_button",
+        "z": "13bee6e068011382",
+        "name": "",
+        "group": "1da480d9eb9773f1",
+        "order": 3,
+        "width": "13",
+        "height": 1,
+        "passthru": false,
+        "label": "Divergente",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":[\"Home_Mode\",\"Home_Funciones\",\"Home_Parametros-div\",\"Home_Consola\",\"Home_Divergente\",\"Home_Camara\"],\"hide\":[\"Home_Convergente\",\"Home_Parametros-con\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 1060,
+        "wires": [
+            [
+                "0c595b3eb8db6aa7"
+            ]
+        ]
+    },
+    {
+        "id": "0c595b3eb8db6aa7",
+        "type": "ui_ui_control",
+        "z": "13bee6e068011382",
+        "name": "",
+        "events": "all",
+        "x": 460,
+        "y": 1040,
+        "wires": [
+            []
         ]
     }
 ]
