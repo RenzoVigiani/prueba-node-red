@@ -1048,10 +1048,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 510,
-        "y": 100,
+        "x": 560,
+        "y": 60,
         "wires": [
-            []
+            [
+                "f5541538ea63a1eb"
+            ]
         ]
     },
     {
@@ -1552,11 +1554,11 @@
         "width": 0,
         "height": 0,
         "name": "",
-        "label": "Enlace Wifi 2.4 GHz",
+        "label": "",
         "format": "{{msg.payload}}",
         "layout": "col-center",
-        "x": 320,
-        "y": 280,
+        "x": 770,
+        "y": 60,
         "wires": []
     },
     {
@@ -1578,7 +1580,7 @@
         "max": "180",
         "step": 1,
         "x": 310,
-        "y": 100,
+        "y": 60,
         "wires": [
             [
                 "4bb92b037d1a0ca7"
