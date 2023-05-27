@@ -291,13 +291,23 @@
         "collapse": false
     },
     {
-        "id": "ae28b2296a229d30",
+        "id": "b2f35dd6d43176bc",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
         "group": "6ca12bd8aeff9f61",
-        "order": 3,
-        "width": 4,
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a5d50c940c88dd7f",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "6ca12bd8aeff9f61",
+        "order": 4,
+        "width": 1,
         "height": 1
     },
     {
@@ -1065,7 +1075,7 @@
         "name": "",
         "group": "6ca12bd8aeff9f61",
         "order": 1,
-        "width": 6,
+        "width": 5,
         "height": 1,
         "passthru": true,
         "label": "Convergente",
@@ -1160,8 +1170,8 @@
         "z": "947c53d08c93935d",
         "name": "",
         "group": "6ca12bd8aeff9f61",
-        "order": 2,
-        "width": 7,
+        "order": 3,
+        "width": 5,
         "height": 1,
         "passthru": false,
         "label": "Divergente",
@@ -1227,7 +1237,7 @@
         "z": "947c53d08c93935d",
         "group": "88bcd046d082a31a",
         "name": "",
-        "order": 2,
+        "order": 1,
         "width": 17,
         "height": 13,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
@@ -1239,6 +1249,34 @@
         "y": 1020,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "51efe190f180b928",
+        "type": "ui_button",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "group": "6ca12bd8aeff9f61",
+        "order": 5,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Cámara",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "camera",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 1020,
+        "wires": [
+            [
+                "f92f69a4808fd0ac",
+                "01b88dc1b581d49e"
+            ]
         ]
     },
     {
