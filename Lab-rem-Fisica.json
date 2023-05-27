@@ -140,7 +140,7 @@
         "tab": "d63cc88c7a46605e",
         "order": 8,
         "disp": true,
-        "width": "13",
+        "width": 12,
         "collapse": false
     },
     {
@@ -291,7 +291,7 @@
         "collapse": false
     },
     {
-        "id": "11e52de710e95a9e",
+        "id": "68ca935a41c6a32e",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
@@ -476,7 +476,7 @@
         "group": "c83e16537c45f368",
         "name": "Envio",
         "order": 1,
-        "width": 13,
+        "width": 12,
         "height": 3,
         "format": "<ul>\n<h1> Envio: </h1>\n        <li>{{msg.payload}}</li>\n      \n</ul>",
         "storeOutMessages": true,
@@ -602,7 +602,7 @@
         "group": "c83e16537c45f368",
         "name": "Recibe",
         "order": 2,
-        "width": 13,
+        "width": 12,
         "height": 3,
         "format": "<ul>\n<h1> Recibe: </h1>\n        <li>{{msg.payload}}</li>\n      \n</ul>",
         "storeOutMessages": true,
