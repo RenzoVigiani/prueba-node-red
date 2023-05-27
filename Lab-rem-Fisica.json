@@ -287,8 +287,8 @@
         "tab": "d63cc88c7a46605e",
         "order": 4,
         "disp": true,
-        "width": 13,
-        "collapse": false
+        "width": "13",
+        "collapse": true
     },
     {
         "id": "e00b91d8464dc49a",
