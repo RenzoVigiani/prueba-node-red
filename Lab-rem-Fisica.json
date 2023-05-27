@@ -1126,35 +1126,6 @@
         ]
     },
     {
-        "id": "9bb8fce257d9f3ef",
-        "type": "inject",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 330,
-        "y": 820,
-        "wires": [
-            [
-                "d13740b28776c28c"
-            ]
-        ]
-    },
-    {
         "id": "60e83583a7610364",
         "type": "ui_button",
         "z": "947c53d08c93935d",
