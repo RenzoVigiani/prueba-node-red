@@ -291,153 +291,13 @@
         "collapse": false
     },
     {
-        "id": "e7a51dd3a102bd9a",
+        "id": "ae28b2296a229d30",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
         "group": "6ca12bd8aeff9f61",
         "order": 3,
         "width": 4,
-        "height": 1
-    },
-    {
-        "id": "b3b6ef05ef5ccc35",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "6ca12bd8aeff9f61",
-        "order": 5,
-        "width": 10,
-        "height": 1
-    },
-    {
-        "id": "14b5119381146414",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 2,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "1d119177ea034156",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 3,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "1fe70cc550f404f0",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 4,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "34c99863c9cfb25d",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 5,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "c2a78a4af0dc4fb7",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 6,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "ff655a2aa84b97c6",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 7,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "44c5780d61b93f64",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 8,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "0e8081c6713d060c",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 9,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "e02a411ec009df85",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 10,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "2a3253ea55df1b98",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 11,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "d8a600862c53e529",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 12,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "ac9cd527361ec206",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 13,
-        "width": 11,
-        "height": 1
-    },
-    {
-        "id": "d29c88f2b8fe56a4",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "88bcd046d082a31a",
-        "order": 14,
-        "width": 11,
         "height": 1
     },
     {
@@ -1199,26 +1059,6 @@
         ]
     },
     {
-        "id": "a46daed71ea2f75a",
-        "type": "ui_template",
-        "z": "947c53d08c93935d",
-        "group": "88bcd046d082a31a",
-        "name": "",
-        "order": 1,
-        "width": "17",
-        "height": 13,
-        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 720,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "d1f3b6bdd5c6a599",
         "type": "ui_button",
         "z": "947c53d08c93935d",
@@ -1382,31 +1222,23 @@
         ]
     },
     {
-        "id": "211c3f09a3f6fd41",
-        "type": "ui_button",
+        "id": "a46daed71ea2f75a",
+        "type": "ui_template",
         "z": "947c53d08c93935d",
+        "group": "88bcd046d082a31a",
         "name": "",
-        "group": "6ca12bd8aeff9f61",
-        "order": 4,
-        "width": "0",
-        "height": "0",
-        "passthru": false,
-        "label": "Cámara",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "camera",
-        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 280,
+        "order": 2,
+        "width": 17,
+        "height": 13,
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 720,
         "y": 1020,
         "wires": [
-            [
-                "f92f69a4808fd0ac",
-                "01b88dc1b581d49e"
-            ]
+            []
         ]
     },
     {
