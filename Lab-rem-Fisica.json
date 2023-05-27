@@ -118,7 +118,7 @@
         "type": "ui_group",
         "name": "Parametros-con",
         "tab": "d63cc88c7a46605e",
-        "order": 5,
+        "order": 6,
         "disp": true,
         "width": "13",
         "collapse": false
@@ -128,7 +128,7 @@
         "type": "ui_group",
         "name": "Funciones",
         "tab": "d63cc88c7a46605e",
-        "order": 8,
+        "order": 9,
         "disp": false,
         "width": "6",
         "collapse": false
@@ -138,7 +138,7 @@
         "type": "ui_group",
         "name": "Consola",
         "tab": "d63cc88c7a46605e",
-        "order": 7,
+        "order": 8,
         "disp": true,
         "width": "13",
         "collapse": false
@@ -148,7 +148,7 @@
         "type": "ui_group",
         "name": "Convergente",
         "tab": "d63cc88c7a46605e",
-        "order": 4,
+        "order": 5,
         "disp": false,
         "width": "17",
         "collapse": false
@@ -158,7 +158,7 @@
         "type": "ui_group",
         "name": "Divergente",
         "tab": "d63cc88c7a46605e",
-        "order": 3,
+        "order": 4,
         "disp": false,
         "width": "17",
         "collapse": false
@@ -178,7 +178,7 @@
         "type": "ui_group",
         "name": "Parametros-div",
         "tab": "d63cc88c7a46605e",
-        "order": 6,
+        "order": 7,
         "disp": true,
         "width": "13",
         "collapse": false
@@ -186,7 +186,7 @@
     {
         "id": "6ca12bd8aeff9f61",
         "type": "ui_group",
-        "name": "Camara",
+        "name": "Visualización",
         "tab": "d63cc88c7a46605e",
         "order": 2,
         "disp": false,
@@ -289,6 +289,16 @@
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "88bcd046d082a31a",
+        "type": "ui_group",
+        "name": "Camara",
+        "tab": "d63cc88c7a46605e",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
     },
     {
         "id": "efd13553b0aa5b2e",
@@ -606,60 +616,6 @@
         ]
     },
     {
-        "id": "235c43f3078fa830",
-        "type": "ui_button",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "group": "1da480d9eb9773f1",
-        "order": 1,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Convergente",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "{\"group\":{\"show\":[\"Fisica_Mode\",\"Fisica_Funciones\",\"Fisica_Parametros-con\",\"Fisica_Consola\",\"Fisica_Convergente\",\"Fisica_Camara\"],\"hide\":[\"Fisica_Divergente\",\"Fisica_Parametros-div\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 210,
-        "y": 960,
-        "wires": [
-            [
-                "dc0905424c5f85c3"
-            ]
-        ]
-    },
-    {
-        "id": "8c2a4d11eb1bab53",
-        "type": "ui_button",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "group": "1da480d9eb9773f1",
-        "order": 2,
-        "width": 7,
-        "height": 1,
-        "passthru": false,
-        "label": "Divergente",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "{\"group\":{\"show\":[\"Fisica_Mode\",\"Fisica_Funciones\",\"Fisica_Parametros-div\",\"Fisica_Consola\",\"Fisica_Divergente\",\"Fisica_Camara\"],\"hide\":[\"Fisica_Convergente\",\"Fisica_Parametros-con\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 210,
-        "y": 1000,
-        "wires": [
-            [
-                "dc0905424c5f85c3"
-            ]
-        ]
-    },
-    {
         "id": "4202cf58e4a226ac",
         "type": "inject",
         "z": "947c53d08c93935d",
@@ -894,115 +850,6 @@
         ]
     },
     {
-        "id": "a0703f5a013f4fac",
-        "type": "inject",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 280,
-        "y": 760,
-        "wires": [
-            [
-                "7d1ad2eacf1d4aca"
-            ]
-        ]
-    },
-    {
-        "id": "7d1ad2eacf1d4aca",
-        "type": "function",
-        "z": "947c53d08c93935d",
-        "name": "function 18",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.12:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 780,
-        "wires": [
-            [
-                "b9a6148fd8a8e3b4"
-            ]
-        ]
-    },
-    {
-        "id": "b9a6148fd8a8e3b4",
-        "type": "ui_template",
-        "z": "947c53d08c93935d",
-        "group": "6ca12bd8aeff9f61",
-        "name": "",
-        "order": 1,
-        "width": 17,
-        "height": 13,
-        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 760,
-        "y": 780,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "d5e4f27d5151036d",
-        "type": "ui_button",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "group": "1da480d9eb9773f1",
-        "order": 3,
-        "width": 4,
-        "height": 1,
-        "passthru": true,
-        "label": "cam",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "camera",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 270,
-        "y": 820,
-        "wires": [
-            [
-                "7d1ad2eacf1d4aca"
-            ]
-        ]
-    },
-    {
-        "id": "dc0905424c5f85c3",
-        "type": "ui_ui_control",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "events": "all",
-        "x": 420,
-        "y": 980,
-        "wires": [
-            [
-                "6c926aeddab9d80f"
-            ]
-        ]
-    },
-    {
         "id": "396de370624119b9",
         "type": "inject",
         "z": "947c53d08c93935d",
@@ -1154,23 +1001,6 @@
         ]
     },
     {
-        "id": "6c926aeddab9d80f",
-        "type": "function",
-        "z": "947c53d08c93935d",
-        "name": "abrir esquema",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Esquema1';\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 620,
-        "y": 980,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "059369056ca71f6f",
         "type": "ui_numeric",
         "z": "947c53d08c93935d",
@@ -1198,36 +1028,13 @@
         ]
     },
     {
-        "id": "e4e209434b514f01",
-        "type": "ui_media",
-        "z": "947c53d08c93935d",
-        "group": "a4c87799322f977e",
-        "name": "",
-        "width": 0,
-        "height": 0,
-        "order": 0,
-        "category": "Esquema",
-        "file": "diagrama_virtual_distancias.png",
-        "layout": "adjust",
-        "showcontrols": true,
-        "loop": true,
-        "onstart": false,
-        "scope": "local",
-        "tooltip": "",
-        "x": 510,
-        "y": 880,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "01b88dc1b581d49e",
         "type": "ui_ui_control",
         "z": "947c53d08c93935d",
         "name": "",
         "events": "change",
-        "x": 520,
-        "y": 1240,
+        "x": 500,
+        "y": 940,
         "wires": [
             []
         ]
@@ -1244,7 +1051,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 1340,
+        "y": 1020,
         "wires": [
             [
                 "a46daed71ea2f75a"
@@ -1255,7 +1062,7 @@
         "id": "a46daed71ea2f75a",
         "type": "ui_template",
         "z": "947c53d08c93935d",
-        "group": "692aca9c657c5110",
+        "group": "6ca12bd8aeff9f61",
         "name": "",
         "order": 1,
         "width": 17,
@@ -1266,37 +1073,9 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 720,
-        "y": 1340,
+        "y": 1020,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "211c3f09a3f6fd41",
-        "type": "ui_button",
-        "z": "947c53d08c93935d",
-        "name": "",
-        "group": "6ca12bd8aeff9f61",
-        "order": 2,
-        "width": 7,
-        "height": 1,
-        "passthru": false,
-        "label": "Cámara",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "camera",
-        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
-        "payloadType": "json",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 320,
-        "y": 1300,
-        "wires": [
-            [
-                "f92f69a4808fd0ac",
-                "01b88dc1b581d49e"
-            ]
         ]
     },
     {
@@ -1304,22 +1083,22 @@
         "type": "ui_button",
         "z": "947c53d08c93935d",
         "name": "",
-        "group": "d129e0a0dad3a8d1",
+        "group": "1da480d9eb9773f1",
         "order": 1,
         "width": 6,
         "height": 1,
         "passthru": true,
-        "label": "Esquema",
+        "label": "Esquema - Conv",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
         "icon": "poll",
-        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Esquema\"],\"hide\":[\"Telecomunicaciones_Camara\"]}}",
+        "payload": "{\"group\":{\"show\":[\"Fisica_Mode\",\"Fisica_Funciones\",\"Fisica_Parametros-con\",\"Fisica_Consola\",\"Fisica_Convergente\",\"Fisica_Camara\"],\"hide\":[\"Fisica_Divergente\",\"Fisica_Parametros-div\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 320,
-        "y": 1220,
+        "x": 290,
+        "y": 900,
         "wires": [
             [
                 "01b88dc1b581d49e",
@@ -1339,7 +1118,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 1160,
+        "y": 840,
         "wires": [
             [
                 "b4601eecb91c91bf"
@@ -1350,7 +1129,7 @@
         "id": "b4601eecb91c91bf",
         "type": "ui_template",
         "z": "947c53d08c93935d",
-        "group": "f5dc0d469bcfeca8",
+        "group": "a4c87799322f977e",
         "name": "",
         "order": 1,
         "width": 17,
@@ -1361,7 +1140,7 @@
         "resendOnRefresh": false,
         "templateScope": "local",
         "x": 720,
-        "y": 1160,
+        "y": 840,
         "wires": [
             []
         ]
@@ -1388,10 +1167,105 @@
         "payload": "",
         "payloadType": "date",
         "x": 330,
-        "y": 1140,
+        "y": 820,
         "wires": [
             [
                 "d13740b28776c28c"
+            ]
+        ]
+    },
+    {
+        "id": "60e83583a7610364",
+        "type": "ui_button",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "group": "1da480d9eb9773f1",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Divergente",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"group\":{\"show\":[\"Fisica_Mode\",\"Fisica_Funciones\",\"Fisica_Parametros-div\",\"Fisica_Consola\",\"Fisica_Divergente\",\"Fisica_Camara\"],\"hide\":[\"Fisica_Convergente\",\"Fisica_Parametros-con\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 960,
+        "wires": [
+            [
+                "01b88dc1b581d49e",
+                "8520f999e747624c"
+            ]
+        ]
+    },
+    {
+        "id": "8520f999e747624c",
+        "type": "function",
+        "z": "947c53d08c93935d",
+        "name": "abrir esquema",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Camara1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 880,
+        "wires": [
+            [
+                "25e38fac9f34ce17"
+            ]
+        ]
+    },
+    {
+        "id": "25e38fac9f34ce17",
+        "type": "ui_template",
+        "z": "947c53d08c93935d",
+        "group": "448272e145e46a81",
+        "name": "",
+        "order": 1,
+        "width": 17,
+        "height": 13,
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 720,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "211c3f09a3f6fd41",
+        "type": "ui_button",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "group": "1da480d9eb9773f1",
+        "order": 1,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Cámara",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "camera",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 280,
+        "y": 1020,
+        "wires": [
+            [
+                "f92f69a4808fd0ac",
+                "01b88dc1b581d49e"
             ]
         ]
     },
