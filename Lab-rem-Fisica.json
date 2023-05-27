@@ -1129,7 +1129,7 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "icon": "",
+        "icon": "poll",
         "payload": "{\"group\":{\"show\":[\"Fisica_Visualización\",\"Fisica_Divvergente\",\"Fisica_Parametros-divvergentes\",\"Fisica_Consola\"],\"hide\":[\"Fisica_Camara\",\"Fisica_Convergente\",\"Fisica_Parametros-conergentes\"]}}",
         "payloadType": "json",
         "topic": "topic",
