@@ -1148,7 +1148,7 @@
         "type": "function",
         "z": "947c53d08c93935d",
         "name": "abrir esquema",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Camara1';\nreturn msg;",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Fisica/main/Imagenes/diagrama_virtual_superior.png'\nmsg.title = 'Camara1';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
