@@ -1130,7 +1130,7 @@
         "color": "",
         "bgcolor": "",
         "icon": "poll",
-        "payload": "{\"group\":{\"show\":[\"Fisica_Visualización\",\"Fisica_Divvergente\",\"Fisica_Parametros-divvergentes\",\"Fisica_Consola\"],\"hide\":[\"Fisica_Camara\",\"Fisica_Convergente\",\"Fisica_Parametros-conergentes\"]}}",
+        "payload": "{\"group\":{\"show\":[\"Fisica_Visualización\",\"Fisica_Divergente\",\"Fisica_Parametros-divergentes\",\"Fisica_Consola\"],\"hide\":[\"Fisica_Camara\",\"Fisica_Convergente\",\"Fisica_Parametros-convergentes\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
