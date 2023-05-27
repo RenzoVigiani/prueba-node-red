@@ -118,9 +118,9 @@
         "type": "ui_group",
         "name": "Parametros-convergentes",
         "tab": "d63cc88c7a46605e",
-        "order": 1,
+        "order": 2,
         "disp": false,
-        "width": "12",
+        "width": 13,
         "collapse": false
     },
     {
@@ -140,7 +140,7 @@
         "tab": "d63cc88c7a46605e",
         "order": 7,
         "disp": false,
-        "width": "12",
+        "width": 13,
         "collapse": false
     },
     {
@@ -150,7 +150,7 @@
         "tab": "d63cc88c7a46605e",
         "order": 4,
         "disp": false,
-        "width": 13,
+        "width": 17,
         "collapse": false
     },
     {
@@ -160,7 +160,7 @@
         "tab": "d63cc88c7a46605e",
         "order": 6,
         "disp": false,
-        "width": 13,
+        "width": 17,
         "collapse": false
     },
     {
@@ -170,7 +170,7 @@
         "tab": "d63cc88c7a46605e",
         "order": 3,
         "disp": false,
-        "width": "12",
+        "width": 13,
         "collapse": false
     },
     {
@@ -178,9 +178,9 @@
         "type": "ui_group",
         "name": "Visualización",
         "tab": "d63cc88c7a46605e",
-        "order": 2,
+        "order": 1,
         "disp": false,
-        "width": 13,
+        "width": "17",
         "collapse": false
     },
     {
@@ -287,16 +287,76 @@
         "tab": "d63cc88c7a46605e",
         "order": 5,
         "disp": true,
-        "width": "13",
+        "width": 17,
         "collapse": false
     },
     {
-        "id": "1bc4bb4caf06ad53",
+        "id": "6b221e114d6fe44d",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
         "group": "6ca12bd8aeff9f61",
         "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7c08c213e292fea1",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7be2eca73359d681",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "92044a80e635999c",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "46b7f8ad7ebb73db",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "1145122f5dddab3d",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f7c1057f40c44f27",
+        "type": "ui_spacer",
+        "z": "947c53d08c93935d",
+        "name": "spacer",
+        "group": "c83e16537c45f368",
+        "order": 8,
         "width": 1,
         "height": 1
     },
@@ -323,7 +383,7 @@
         "z": "947c53d08c93935d",
         "name": "",
         "group": "c83e16537c45f368",
-        "order": 3,
+        "order": 9,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -516,7 +576,7 @@
         "z": "947c53d08c93935d",
         "name": "",
         "group": "c83e16537c45f368",
-        "order": 4,
+        "order": 10,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -601,7 +661,7 @@
         "z": "947c53d08c93935d",
         "group": "c83e16537c45f368",
         "name": "Recibe",
-        "order": 2,
+        "order": 5,
         "width": 12,
         "height": 3,
         "format": "<ul>\n<h1> Recibe: </h1>\n{{msg.payload}}      \n</ul>",
@@ -1112,8 +1172,8 @@
         "group": "a4c87799322f977e",
         "name": "",
         "order": 1,
-        "width": "0",
-        "height": "0",
+        "width": 0,
+        "height": 0,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1179,8 +1239,8 @@
         "group": "448272e145e46a81",
         "name": "",
         "order": 1,
-        "width": "0",
-        "height": "0",
+        "width": 0,
+        "height": 0,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1199,8 +1259,8 @@
         "group": "88bcd046d082a31a",
         "name": "",
         "order": 1,
-        "width": "0",
-        "height": "0",
+        "width": 0,
+        "height": 0,
         "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
         "storeOutMessages": true,
         "fwdInMessages": true,
