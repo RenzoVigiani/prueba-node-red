@@ -97,7 +97,7 @@
         "site": {
             "name": "Laboratorios Remotos FACET",
             "hideToolbar": "false",
-            "allowSwipe": "false",
+            "allowSwipe": "true",
             "lockMenu": "false",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
