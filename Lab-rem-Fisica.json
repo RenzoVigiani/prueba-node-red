@@ -180,7 +180,7 @@
         "tab": "d63cc88c7a46605e",
         "order": 2,
         "disp": false,
-        "width": 16,
+        "width": 15,
         "collapse": false
     },
     {
@@ -289,16 +289,6 @@
         "disp": true,
         "width": 15,
         "collapse": false
-    },
-    {
-        "id": "fe7cf0b412e70a8d",
-        "type": "ui_spacer",
-        "z": "947c53d08c93935d",
-        "name": "spacer",
-        "group": "6ca12bd8aeff9f61",
-        "order": 4,
-        "width": 1,
-        "height": 1
     },
     {
         "id": "efd13553b0aa5b2e",
