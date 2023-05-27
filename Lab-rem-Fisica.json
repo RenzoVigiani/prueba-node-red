@@ -933,8 +933,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 760,
+        "x": 550,
+        "y": 780,
         "wires": [
             [
                 "b9a6148fd8a8e3b4"
@@ -955,8 +955,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 700,
-        "y": 760,
+        "x": 760,
+        "y": 780,
         "wires": [
             []
         ]
@@ -1158,7 +1158,7 @@
         "type": "function",
         "z": "947c53d08c93935d",
         "name": "abrir esquema",
-        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Camara1';\nreturn msg;",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Esquema1';\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1194,6 +1194,204 @@
         "wires": [
             [
                 "efd13553b0aa5b2e"
+            ]
+        ]
+    },
+    {
+        "id": "e4e209434b514f01",
+        "type": "ui_media",
+        "z": "947c53d08c93935d",
+        "group": "a4c87799322f977e",
+        "name": "",
+        "width": 0,
+        "height": 0,
+        "order": 0,
+        "category": "Esquema",
+        "file": "diagrama_virtual_distancias.png",
+        "layout": "adjust",
+        "showcontrols": true,
+        "loop": true,
+        "onstart": false,
+        "scope": "local",
+        "tooltip": "",
+        "x": 510,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01b88dc1b581d49e",
+        "type": "ui_ui_control",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "events": "change",
+        "x": 520,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f92f69a4808fd0ac",
+        "type": "function",
+        "z": "947c53d08c93935d",
+        "name": "abrir camara",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'http://192.168.1.12:4747/video'\nmsg.title = 'Camara1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 1340,
+        "wires": [
+            [
+                "a46daed71ea2f75a"
+            ]
+        ]
+    },
+    {
+        "id": "a46daed71ea2f75a",
+        "type": "ui_template",
+        "z": "947c53d08c93935d",
+        "group": "692aca9c657c5110",
+        "name": "",
+        "order": 1,
+        "width": 17,
+        "height": 13,
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 720,
+        "y": 1340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "211c3f09a3f6fd41",
+        "type": "ui_button",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "group": "6ca12bd8aeff9f61",
+        "order": 2,
+        "width": 7,
+        "height": 1,
+        "passthru": false,
+        "label": "Cámara",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "camera",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Camara\"],\"hide\":[\"Telecomunicaciones_Esquema\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1300,
+        "wires": [
+            [
+                "f92f69a4808fd0ac",
+                "01b88dc1b581d49e"
+            ]
+        ]
+    },
+    {
+        "id": "d1f3b6bdd5c6a599",
+        "type": "ui_button",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "group": "d129e0a0dad3a8d1",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "label": "Esquema",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "poll",
+        "payload": "{\"group\":{\"show\":[\"Telecomunicaciones_Tipo de laboratorio\",\"Telecomunicaciones_Parámetros\",\"Telecomunicaciones_Panel de control\",\"Telecomunicaciones_Visualización\",\"Telecomunicaciones_Esquema\"],\"hide\":[\"Telecomunicaciones_Camara\"]}}",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 1220,
+        "wires": [
+            [
+                "01b88dc1b581d49e",
+                "d13740b28776c28c"
+            ]
+        ]
+    },
+    {
+        "id": "d13740b28776c28c",
+        "type": "function",
+        "z": "947c53d08c93935d",
+        "name": "abrir esquema",
+        "func": "// Deberá reemplazar dirección su cámara ip, su usuario y su clave.\n//msg.payload='http://ip_camara/videostream.cgi?user=usuario&pwd=clave';\nmsg.payload = 'https://raw.githubusercontent.com/RenzoVigiani/LabRem-Telecomunicaciones/main/Imagenes/wifi2-4GHz.png'\nmsg.title = 'Camara1';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1160,
+        "wires": [
+            [
+                "b4601eecb91c91bf"
+            ]
+        ]
+    },
+    {
+        "id": "b4601eecb91c91bf",
+        "type": "ui_template",
+        "z": "947c53d08c93935d",
+        "group": "f5dc0d469bcfeca8",
+        "name": "",
+        "order": 1,
+        "width": 17,
+        "height": 13,
+        "format": "<style>\n    img {\n        border: 1px solid #ddd;\n        border-radius: 8px;\n        padding: 3px;\n    }\n</style>\n\n<img alt=\"IpCam\" title={{msg.title}} width=\"100%\" height=\"100%\" src=\"{{msg.payload}}\"/>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 720,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9bb8fce257d9f3ef",
+        "type": "inject",
+        "z": "947c53d08c93935d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 1140,
+        "wires": [
+            [
+                "d13740b28776c28c"
             ]
         ]
     },
