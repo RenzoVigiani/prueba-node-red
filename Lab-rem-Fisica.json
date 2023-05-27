@@ -116,7 +116,7 @@
     {
         "id": "fba5dd2093002ecd",
         "type": "ui_group",
-        "name": "Parametros-con",
+        "name": "Parametros Convergente",
         "tab": "d63cc88c7a46605e",
         "order": 6,
         "disp": true,
@@ -166,7 +166,7 @@
     {
         "id": "69d766c4475badde",
         "type": "ui_group",
-        "name": "Parametros-div",
+        "name": "Parametros divergente",
         "tab": "d63cc88c7a46605e",
         "order": 7,
         "disp": true,
