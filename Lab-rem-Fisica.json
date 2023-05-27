@@ -138,7 +138,7 @@
         "type": "ui_group",
         "name": "Consola",
         "tab": "d63cc88c7a46605e",
-        "order": 4,
+        "order": 5,
         "disp": true,
         "width": 12,
         "collapse": false
@@ -168,7 +168,7 @@
         "type": "ui_group",
         "name": "Parametros divergente",
         "tab": "d63cc88c7a46605e",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": 12,
         "collapse": false
@@ -285,7 +285,7 @@
         "type": "ui_group",
         "name": "Camara",
         "tab": "d63cc88c7a46605e",
-        "order": 5,
+        "order": 3,
         "disp": true,
         "width": 12,
         "collapse": false
