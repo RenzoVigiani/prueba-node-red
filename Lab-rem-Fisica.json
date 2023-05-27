@@ -1068,7 +1068,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 270,
-        "y": 900,
+        "y": 820,
         "wires": [
             [
                 "01b88dc1b581d49e",
@@ -1088,7 +1088,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 840,
+        "y": 820,
         "wires": [
             [
                 "b4601eecb91c91bf"
@@ -1135,7 +1135,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 270,
-        "y": 960,
+        "y": 900,
         "wires": [
             [
                 "01b88dc1b581d49e",
