@@ -1217,7 +1217,7 @@
         "color": "",
         "bgcolor": "",
         "icon": "camera",
-        "payload": "{\"group\":{\"hide\":[\"Fisica_Convergente\",\"Fisica_Divergente\"]}}",
+        "payload": "{\"group\":{\"show\":[\"Fisica_Camara\"],\"hide\":[\"Fisica_Convergente\",\"Fisica_Divergente\"]}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
