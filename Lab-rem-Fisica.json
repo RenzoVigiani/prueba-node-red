@@ -361,6 +361,15 @@
         "height": 1
     },
     {
+        "id": "c3b520a53ed7d570",
+        "type": "ui_link",
+        "name": "GitHub",
+        "link": "https://github.com/RenzoVigiani/LabRem-Fisica",
+        "icon": "open_in_browser",
+        "target": "newtab",
+        "order": 3
+    },
+    {
         "id": "efd13553b0aa5b2e",
         "type": "function",
         "z": "947c53d08c93935d",
