@@ -139,8 +139,8 @@
         "name": "Consola",
         "tab": "d63cc88c7a46605e",
         "order": 7,
-        "disp": true,
-        "width": 12,
+        "disp": false,
+        "width": "12",
         "collapse": false
     },
     {
@@ -291,7 +291,7 @@
         "collapse": false
     },
     {
-        "id": "d0d42310fb0485ff",
+        "id": "e00b91d8464dc49a",
         "type": "ui_spacer",
         "z": "947c53d08c93935d",
         "name": "spacer",
@@ -477,7 +477,7 @@
         "name": "Envio",
         "order": 1,
         "width": 12,
-        "height": 2,
+        "height": 3,
         "format": "<ul>\n<h1> Envio: </h1>\n{{msg.payload}}      \n</ul>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -603,7 +603,7 @@
         "name": "Recibe",
         "order": 2,
         "width": 12,
-        "height": 2,
+        "height": 3,
         "format": "<ul>\n<h1> Recibe: </h1>\n{{msg.payload}}      \n</ul>",
         "storeOutMessages": true,
         "fwdInMessages": true,
